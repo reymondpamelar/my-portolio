@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 import Sidebar from "../../components/pro-sidebar";
+import ContactBar from "../../components/contactBar";
 
 export default function DashboardLayout({children}) {
     return (
@@ -16,23 +17,12 @@ export default function DashboardLayout({children}) {
                 <div className="h-screen fixed z-20 hidden md:flex">
                     <Sidebar/>
                 </div>
-                <div id={"scroll"} className={`w-full md:ml-16`}>
+                <div id={"scroll"} className={`w-full md:ml-20`}>
                     <body className="w-full">
                     {children}
                     </body>
                 </div>
-                <div className={'md:ml-16 fixed bottom-0 left-0 flex items-center justify-center p-4 border-t border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 inset-x-0'}>
-                    <a
-                        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Contact me!{' '}
-                        <span className={styles.logo}>
-                            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-                        </span>
-                    </a>
-                </div>
+                <ContactBar/>
             </div>
         </div>
     )

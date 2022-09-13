@@ -158,7 +158,7 @@ export default function Intro() {
                 <div className={'absolute w-full h-full bg-gradient-to-b from-transparent via-transparent to-zinc-800'}>
 
                 </div>
-                <div className={'flex items-center justify-center md:justify-start md:pr-4 md:pl-8 pt-8 md:pt-0'}>
+                <div className={'flex items-center justify-center md:justify-start md:pr-4 md:pl-6 pt-8 md:pt-0'}>
                     <img src={'portrait.png'} className={'z-10 object-cover object-top rounded-full h-48 w-48'}/>
                 </div>
                 <h1 className={'border-l pl-4 text-xl md:text-5xl mt-8 ml-4 md:mt-0 md:ml-0'}>
@@ -166,10 +166,11 @@ export default function Intro() {
                         Nice to meet you!
                     </div>
                     <div className={'animate__animated animate__fadeInDown animate__delay-1s'}>
-                        I'm Reymond Pamelar,
+                        I'm
+                        <span className={'text-pblue'}> Reymond Pamelar</span>,
                     </div>
-                    <div className={'animate__animated animate__fadeInDown animate__delay-2s'}>
-                        Web Developer
+                    <div className={'animate__animated animate__fadeInDown animate__delay-2s '}>
+                        Front-end Web Developer
                     </div>
                 </h1>
             </div>
