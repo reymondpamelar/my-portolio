@@ -19,22 +19,21 @@ export default function DashboardLayout({children}) {
                 <div id={"scroll"} className={`w-full md:ml-16`}>
                     <body className="w-full">
                     {children}
-                    <div className={'flex items-center justify-center p-4 border-t border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 absolute bottom-0 inset-x-0 md:ml-16'}>
-                        <a
-                            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Contact me!{' '}
-                            <span className={styles.logo}>
-                            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-                        </span>
-                        </a>
-                    </div>
                     </body>
                 </div>
+                <div className={'md:ml-16 fixed bottom-0 left-0 flex items-center justify-center p-4 border-t border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 inset-x-0'}>
+                    <a
+                        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Contact me!{' '}
+                        <span className={styles.logo}>
+                            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+                        </span>
+                    </a>
+                </div>
             </div>
-
         </div>
     )
 }
