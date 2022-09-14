@@ -21,7 +21,7 @@ export default function Intro() {
 
     return (
         <div>
-            <div className={'md:flex items-center relative justify-center md:justify-start md:h-[50rem]'}>
+            <div className={'md:flex items-center relative md:justify-start h-screen'}>
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -175,8 +175,8 @@ export default function Intro() {
                             Front-end Web Developer
                         </div>
                     </h1>
-                    <div className={'cursor-pointer text-zinc-700 flex font-bold mt-4 absolute -bottom-20'}>
-                        <div className={'p-4 px-6 bg-white rounded-l-xl flex items-center justify-center'}>Contact Me</div>
+                    <div className={'cursor-pointer flex font-bold mt-4 absolute -bottom-20'}>
+                        <div className={'p-4 px-6 bg-zinc-700 rounded-l-xl flex items-center justify-center'}>Contact Me</div>
                         <div className={'bg-pblue flex justify-center items-center p-4 rounded-r-xl text-white'}>
                             <Icon.ChevronRight/>
                         </div>
@@ -184,6 +184,9 @@ export default function Intro() {
                 </div>
             </div>
 
+            <h1 className={'flex items-center justify-center text-center h-screen'}>
+                Let's have a conversation!
+            </h1>
         </div>
     )
 }

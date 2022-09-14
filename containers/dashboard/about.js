@@ -16,9 +16,9 @@ export default function About() {
                 <h1 className={'border-l pl-4'}>
                     About
                 </h1>
-                <div className={'text-lg mt-10 pl-10'}>
-                    <div className={' grid grid-cols-2 mb-20'}>
-                        <div className={'space-y-6 bg-white text-zinc-700 rounded-xl p-4'}>
+                <div className={'text-lg mt-10 md:pl-10'}>
+                    <div className={' grid md:grid-cols-2 mb-20'}>
+                        <div className={'space-y-6 bg-zinc-700 rounded-xl p-4'}>
                             <div>
                                 Interweaving my creativity with problem solving is what I do best!
                             </div>
@@ -30,10 +30,10 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                    <label className={' bg-white text-zinc-700 rounded-xl p-4'}>
+                    <div className={'bg-zinc-700 rounded-xl p-4 inline-block'}>
                         Here are the things I use to create what I want:
-                    </label>
-                    <div className={'grid grid-cols-3 gap-10 my-6 mr-40 p-4 rounded-xl bg-white text-zinc-700 divide-x'}>
+                    </div>
+                    <div className={'grid grid-cols-3 gap-10 my-20 mr-40 p-4 rounded-xl bg-zinc-700 divide-x'}>
                         <div>
                             <div className={'flex grid justify-center rounded-t-xl p-3'}>
                                 <div className={'flex justify-center'}>
