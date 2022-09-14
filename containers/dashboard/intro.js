@@ -3,6 +3,7 @@ import 'animate.css';
 import Particles from "react-tsparticles";
 import { loadTrianglesPreset } from "tsparticles-preset-triangles";
 import { motion } from "framer-motion"
+import * as Icon from 'react-feather'
 
 export default function Intro() {
     const particlesInit = (main) => {
@@ -161,18 +162,26 @@ export default function Intro() {
                 <div className={'flex items-center justify-center md:justify-start md:pr-4 md:pl-6 pt-8 md:pt-0'}>
                     <img src={'portrait.png'} className={'z-10 object-cover object-top rounded-full h-48 w-48'}/>
                 </div>
-                <h1 className={'border-l pl-4 text-xl md:text-5xl mt-8 ml-4 md:mt-0 md:ml-0'}>
-                    <div className={'animate__animated animate__fadeInRightBig'}>
-                        Nice to meet you!
+                <div className={'relative'}>
+                    <h1 className={'border-l pl-4 text-xl md:text-5xl mt-8 ml-4 md:mt-0 md:ml-0'}>
+                        <div className={'animate__animated animate__fadeInRightBig'}>
+                            👋🏽 Nice to meet you!
+                        </div>
+                        <div className={'animate__animated animate__fadeInDown animate__delay-1s'}>
+                            I'm
+                            <span className={'text-pblue'}> Reymond Pamelar</span>,
+                        </div>
+                        <div className={'animate__animated animate__fadeInDown animate__delay-2s '}>
+                            Front-end Web Developer
+                        </div>
+                    </h1>
+                    <div className={'cursor-pointer text-zinc-700 flex font-bold mt-4 absolute -bottom-20'}>
+                        <div className={'p-4 px-6 bg-white rounded-l-xl flex items-center justify-center'}>Contact Me</div>
+                        <div className={'bg-pblue flex justify-center items-center p-4 rounded-r-xl text-white'}>
+                            <Icon.ChevronRight/>
+                        </div>
                     </div>
-                    <div className={'animate__animated animate__fadeInDown animate__delay-1s'}>
-                        I'm
-                        <span className={'text-pblue'}> Reymond Pamelar</span>,
-                    </div>
-                    <div className={'animate__animated animate__fadeInDown animate__delay-2s '}>
-                        Front-end Web Developer
-                    </div>
-                </h1>
+                </div>
             </div>
 
         </div>

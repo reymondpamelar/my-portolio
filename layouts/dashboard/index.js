@@ -17,8 +17,8 @@ export default function DashboardLayout({children}) {
                 <div className="h-screen fixed z-20 hidden md:flex">
                     <Sidebar/>
                 </div>
-                <div id={"scroll"} className={`w-full md:ml-20`}>
-                    <body className="w-full">
+                <div id={"scroll"} className={`w-full md:ml-20 `}>
+                    <body className="w-full pb-24">
                     {children}
                     </body>
                 </div>
