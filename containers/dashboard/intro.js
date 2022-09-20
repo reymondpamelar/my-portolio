@@ -176,17 +176,13 @@ export default function Intro() {
                         </div>
                     </h1>
                     <div className={'cursor-pointer flex font-bold mt-4 absolute -bottom-20'}>
-                        <div className={'p-4 px-6 bg-zinc-700 rounded-l-xl flex items-center justify-center'}>Contact Me</div>
+                        <div className={'p-4 px-6 bg-zinc-700 rounded-l-xl flex items-center justify-center'}>About</div>
                         <div className={'bg-pblue flex justify-center items-center p-4 rounded-r-xl text-white'}>
                             <Icon.ChevronRight/>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <h1 className={'flex items-center justify-center text-center h-screen'}>
-                Let's have a conversation!
-            </h1>
         </div>
     )
 }

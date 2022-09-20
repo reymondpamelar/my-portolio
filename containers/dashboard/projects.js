@@ -12,7 +12,7 @@ export default function Projects() {
     }
 
     return (
-        <div className={'mt-10'}>
+        <div className={'pt-20'}>
             <div className={'pl-4'}>
                 <h1 className={'border-l pl-4'}>
                     Projects

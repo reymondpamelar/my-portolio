@@ -1,0 +1,28 @@
+import * as Icon from 'react-feather'
+export default function Navbar(props) {
+    return (
+        <div className={'flex justify-start w-full fixed top-0 z-50'}>
+            <div className={'z-50 flex items-center gap-12 rounded-b-2xl p-5 px-6'}>
+                <Icon.User/>
+                <div onClick={()=>props.setStep(0)} className={'cursor-pointer p-2 overflow-hidden relative'}>
+                    <div>
+                        Home >
+                    </div>
+                    <div className={props.step !== 0 ? 'translate-x-40 absolute inset-0 bottom-0 border-b transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b transition ease-in-out duration-500'}></div>
+                </div>
+                <div onClick={()=>props.setStep(1)} className={'cursor-pointer p-2 overflow-hidden relative'}>
+                    <div>
+                        About >
+                    </div>
+                    <div className={props.step !== 1 ? 'translate-x-40 absolute inset-0 bottom-0 border-b transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b transition ease-in-out duration-500'}></div>
+                </div>
+                <div onClick={()=>props.setStep(2)} className={'cursor-pointer p-2 overflow-hidden relative'}>
+                    <div>
+                        Projects >
+                    </div>
+                    <div className={props.step !== 2 ? 'translate-x-40 absolute inset-0 bottom-0 border-b transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b transition ease-in-out duration-500'}></div>
+                </div>
+            </div>
+        </div>
+    )
+}
