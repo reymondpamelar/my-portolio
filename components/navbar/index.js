@@ -9,19 +9,19 @@ export default function Navbar(props) {
                     <div>
                         Home >
                     </div>
-                    <div className={props.step !== 0 ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 transition ease-in-out duration-500'}></div>
+                    <div className={props.step !== 0 ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
                 </div>
                 <div onClick={()=>props.setStep(1)} className={'cursor-pointer p-2 overflow-hidden relative'}>
                     <div>
                         About >
                     </div>
-                    <div className={props.step !== 1 ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 transition ease-in-out duration-500'}></div>
+                    <div className={props.step !== 1 ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
                 </div>
                 <div onClick={()=>props.setStep(2)} className={'cursor-pointer p-2 overflow-hidden relative'}>
                     <div>
                         Projects >
                     </div>
-                    <div className={props.step !== 2 ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 transition ease-in-out duration-500'}></div>
+                    <div className={props.step !== 2 ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
                 </div>
                 <div>
                     <DarkModeToggle/>

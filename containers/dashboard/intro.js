@@ -4,6 +4,7 @@ import Particles from "react-tsparticles";
 import { loadTrianglesPreset } from "tsparticles-preset-triangles";
 import { motion } from "framer-motion"
 import * as Icon from 'react-feather'
+import FadeSlide from "../../components/flip-move/fadeSlide";
 
 export default function Intro() {
     const particlesInit = (main) => {
@@ -165,23 +166,27 @@ export default function Intro() {
 
                 </div>
                 <div className={'relative pl-10 md:pl-20'}>
-                    <h1 className={' text-xl text-3xl md:text-5xl'}>
-                        <div className={'animate__animated animate__fadeInRight'}>
-                            <span className={'text-pblue'}> Reymond Pamelar</span>
+                    <FadeSlide>
+                        <h1 className={' text-xl text-3xl md:text-5xl'}>
+                            <div className={''}>
+                                <span className={'text-pblue'}> Reymond Pamelar</span>
+                            </div>
+                        </h1>
+                        <h1 className={' text-xl text-3xl md:text-5xl'}>
+                            <div className={' '}>
+                                Front-end Web Developer
+                            </div>
+                        </h1>
+                        <div className={''}>
+                            Welcome to my portfolio.
                         </div>
-                        <div className={'animate__animated animate__fadeInRight animate__delay-1s '}>
-                            Front-end Web Developer
+                        <div className={'cursor-pointer flex font-bold mt-4 absolute -bottom-20'}>
+                            <div className={'p-4 px-10 shadow-xl bg-zinc-500 border dark:border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5 rounded-l-xl flex items-center justify-center transition ease-in-out duration-300'}>About</div>
+                            <div className={'bg-pblue flex justify-center items-center p-4 rounded-r-xl text-white'}>
+                                <Icon.ChevronRight/>
+                            </div>
                         </div>
-                    </h1>
-                    <div className={'animate__animated animate__fadeInDown text-lg animate__delay-2s'}>
-                        Welcome to my portfolio.
-                    </div>
-                    <div className={'cursor-pointer flex font-bold mt-4 absolute -bottom-20'}>
-                        <div className={'p-4 px-10 shadow-xl bg-zinc-500 border dark:border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5 rounded-l-xl flex items-center justify-center transition ease-in-out duration-300'}>About</div>
-                        <div className={'bg-pblue flex justify-center items-center p-4 rounded-r-xl text-white'}>
-                            <Icon.ChevronRight/>
-                        </div>
-                    </div>
+                    </FadeSlide>
                 </div>
             </div>
         </div>
