@@ -21,6 +21,11 @@ export default function Intro() {
 
     return (
         <div>
+            <div className={'ml-4'}>
+                <h1 className={' absolute top-20 text-8xl z-20 pl-4'}>
+                    Home
+                </h1>
+            </div>
             <div className={'md:flex items-center relative md:justify-start h-screen'}>
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -160,7 +165,7 @@ export default function Intro() {
 
                 </div>
                 <div className={'flex items-center justify-center md:justify-start md:pr-4 md:pl-6 pt-8 md:pt-0'}>
-                    <img src={'portrait.png'} className={'z-10 object-cover object-top rounded-full h-48 w-48'}/>
+                    <img src={'portrait-remove-bg.png'} className={'z-10 bg-black bg-opacity-25  object-cover object-top rounded-full h-48 w-48'}/>
                 </div>
                 <div className={'relative'}>
                     <h1 className={'border-l pl-4 text-xl md:text-5xl mt-8 ml-4 md:mt-0 md:ml-0'}>
