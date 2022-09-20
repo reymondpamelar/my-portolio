@@ -22,7 +22,7 @@ export default function Intro() {
     return (
         <div>
             <div className={'ml-4'}>
-                <h1 className={'relative top-20 text-8xl z-20 pl-4'}>
+                <h1 className={'relative top-24 text-8xl z-20 pl-4'}>
                     Home
                 </h1>
             </div>

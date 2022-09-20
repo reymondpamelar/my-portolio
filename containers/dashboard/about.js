@@ -8,15 +8,24 @@ export default function About() {
 
 
     return (
-        <div className={'pt-20'}>
+        <div className={'pt-24'}>
             <div className={'px-4'}>
-                <h1 className={' text-8xl pl-4'}>
+                <h1 className={'text-8xl pl-4'}>
                     About
                 </h1>
-                <div className={'text-lg mt-10 md:pl-10'}>
+                <div className={'text-lg mt-32 md:pl-10 pb-10'}>
                     <FadeSlide>
                         <div key={'quote1'} className={' grid md:grid-cols-2 mb-20'}>
-                            <div className={'space-y-6 bg-zinc-700 rounded-xl p-4'}>
+                            <div className={'space-y-6 p-4'}>
+                                <h3>
+                                    Hello!
+                                </h3>
+                                <div>
+                                    I am <span className={'text-pblue font-bold'}>Reymond Pamelar</span>
+                                </div>
+                                <div>
+                                    Raised in sunny San Diego, CA, I have always had an interest in computer science. After graduating San Diego State University, I found a great interest in Web Development.
+                                </div>
                                 <div>
                                     Interweaving my creativity with problem solving is what I do best!
                                 </div>
@@ -27,10 +36,15 @@ export default function About() {
                                     However, I do like to explore outside the boundaries of a browser.
                                 </div>
                             </div>
+                            <div className={'h-full flex justify-center '}>
+                                <div className={'drop-shadow-xl inline-block border-b border-zinc-500 overflow-hidden relative bottom-32'}>
+                                    <img src={'portrait-remove-bg.png'} className={'relative z-10 relative -bottom-32 animate__animated animate__fadeInUp'}/>
+                                </div>
+                            </div>
                         </div>
                         <div key={'quote2'} className={'grid my-20 mr-20 rounded-xl'}>
-                            <div className={'bg-zinc-700 rounded-xl p-4'}>
-                                <div className={'border-b  bordeflex grid grid-cols-2 justify-center rounded-t-xl p-3'}>
+                            <div className={' rounded-xl p-4'}>
+                                <div className={'border-b flex grid grid-cols-2 justify-center rounded-t-xl p-3'}>
                                     <h4>
                                         Languages
                                     </h4>

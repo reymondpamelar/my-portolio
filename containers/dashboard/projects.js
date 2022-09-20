@@ -12,7 +12,7 @@ export default function Projects() {
     }
 
     return (
-        <div className={'pt-20'}>
+        <div className={'pt-24'}>
             <div className={'pl-4'}>
                 <h1 className={' text-8xl pl-4'}>
                     Projects
