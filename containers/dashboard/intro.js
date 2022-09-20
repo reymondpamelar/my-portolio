@@ -22,11 +22,11 @@ export default function Intro() {
     return (
         <div>
             <div className={'ml-4'}>
-                <h1 className={' absolute top-20 text-8xl z-20 pl-4'}>
+                <h1 className={'relative top-20 text-8xl z-20 pl-4'}>
                     Home
                 </h1>
             </div>
-            <div className={'md:flex items-center relative md:justify-start h-screen'}>
+            <div className={'flex items-center relative md:justify-start h-screen'}>
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -164,24 +164,23 @@ export default function Intro() {
                 <div className={'absolute w-full h-full bg-gradient-to-b from-transparent via-transparent to-zinc-800'}>
 
                 </div>
-                <div className={'flex items-center justify-center md:justify-start md:pr-4 md:pl-6 pt-8 md:pt-0'}>
-                    <img src={'portrait-remove-bg.png'} className={'z-10 bg-black bg-opacity-25  object-cover object-top rounded-full h-48 w-48'}/>
+                <div className={'hidden flex items-center justify-center md:justify-start md:pr-4 md:pl-6 pt-8 md:pt-0'}>
+                    <img src={'portrait-remove-bg.png'} className={'z-10 bg-black border border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 bg-opacity-25  object-cover object-top rounded-full h-48 w-48'}/>
                 </div>
-                <div className={'relative'}>
-                    <h1 className={'border-l pl-4 text-xl md:text-5xl mt-8 ml-4 md:mt-0 md:ml-0'}>
-                        <div className={'animate__animated animate__fadeInRightBig'}>
-                            👋🏽 Nice to meet you!
+                <div className={'relative pl-10 md:pl-20'}>
+                    <h1 className={' text-xl text-3xl md:text-5xl'}>
+                        <div className={'animate__animated animate__fadeInRight'}>
+                            <span className={'text-pblue'}> Reymond Pamelar</span>
                         </div>
-                        <div className={'animate__animated animate__fadeInDown animate__delay-1s'}>
-                            I'm
-                            <span className={'text-pblue'}> Reymond Pamelar</span>,
-                        </div>
-                        <div className={'animate__animated animate__fadeInDown animate__delay-2s '}>
+                        <div className={'animate__animated animate__fadeInRight animate__delay-1s '}>
                             Front-end Web Developer
                         </div>
                     </h1>
+                    <div className={'animate__animated animate__fadeInDown text-lg animate__delay-2s'}>
+                        Welcome to my portfolio.
+                    </div>
                     <div className={'cursor-pointer flex font-bold mt-4 absolute -bottom-20'}>
-                        <div className={'p-4 px-6 bg-zinc-700 rounded-l-xl flex items-center justify-center'}>About</div>
+                        <div className={'p-4 px-10 shadow-xl bg-zinc-500 border border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5 rounded-l-xl flex items-center justify-center'}>About</div>
                         <div className={'bg-pblue flex justify-center items-center p-4 rounded-r-xl text-white'}>
                             <Icon.ChevronRight/>
                         </div>

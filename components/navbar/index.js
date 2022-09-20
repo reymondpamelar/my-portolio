@@ -2,8 +2,8 @@ import * as Icon from 'react-feather'
 export default function Navbar(props) {
     return (
         <div className={'flex justify-start w-full fixed top-0 z-50'}>
-            <div className={'z-50 flex items-center gap-12 rounded-b-2xl p-5 px-6'}>
-                <Icon.User/>
+            <div className={'z-50 flex items-center gap-12 rounded-b-2xl p-5 px-12'}>
+                <h4>RP</h4>
                 <div onClick={()=>props.setStep(0)} className={'cursor-pointer p-2 overflow-hidden relative'}>
                     <div>
                         Home >
