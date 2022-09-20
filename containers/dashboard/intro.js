@@ -161,11 +161,8 @@ export default function Intro() {
                             }}}
                     />
                 </motion.div>
-                <div className={'absolute w-full h-full bg-gradient-to-b from-transparent via-transparent to-zinc-800'}>
+                <div className={'absolute hidden dark:block w-full h-full bg-gradient-to-b from-transparent via-transparent to-zinc-800'}>
 
-                </div>
-                <div className={'hidden flex items-center justify-center md:justify-start md:pr-4 md:pl-6 pt-8 md:pt-0'}>
-                    <img src={'portrait-remove-bg.png'} className={'z-10 bg-black border border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 bg-opacity-25  object-cover object-top rounded-full h-48 w-48'}/>
                 </div>
                 <div className={'relative pl-10 md:pl-20'}>
                     <h1 className={' text-xl text-3xl md:text-5xl'}>
@@ -180,7 +177,7 @@ export default function Intro() {
                         Welcome to my portfolio.
                     </div>
                     <div className={'cursor-pointer flex font-bold mt-4 absolute -bottom-20'}>
-                        <div className={'p-4 px-10 shadow-xl bg-zinc-500 border border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5 rounded-l-xl flex items-center justify-center'}>About</div>
+                        <div className={'p-4 px-10 shadow-xl bg-zinc-500 border dark:border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5 rounded-l-xl flex items-center justify-center transition ease-in-out duration-300'}>About</div>
                         <div className={'bg-pblue flex justify-center items-center p-4 rounded-r-xl text-white'}>
                             <Icon.ChevronRight/>
                         </div>
