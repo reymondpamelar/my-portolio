@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import 'animate.css';
 import * as Icon from 'react-feather'
 import { motion } from "framer-motion"
@@ -6,6 +6,14 @@ import FadeSlide from "../../components/flip-move/fadeSlide";
 
 export default function About() {
 
+    useEffect(() => {
+        setTimeout(()=>{
+            document.getElementById('portrait-desktop').classList.add('-translate-x-6')
+            document.getElementById('portrait-desktop').classList.add('-translate-y-6')
+            document.getElementById('portrait-mobile').classList.add('-translate-x-6')
+            document.getElementById('portrait-mobile').classList.add('-translate-y-6')
+        },750)
+    },[])
 
     return (
         <div className={'pt-24'}>
@@ -14,9 +22,11 @@ export default function About() {
                     About
                 </h1>
                 <div className={'text-lg md:mt-32 pb-10'}>
-                    <div className={'md:hidden h-full flex justify-center mb-6 h-72 p-4 '}>
-                        <div className={'drop-shadow-xl inline-block border-b border-zinc-500 overflow-hidden relative'}>
-                            <img src={'portrait-remove-bg.png'} alt={'portrait'} className={'relative z-10 relative '}/>
+                    <div className={'md:hidden h-full flex justify-center relative p-8 ml-4 relative'}>
+                        <div className={' rounded-3xl border border-zinc-500'}>
+                            <div id={'portrait-mobile'} className={'shadow-2xl rounded-3xl border border-zinc-500 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
+                                <img src={'portrait.png'} alt={'portrait'} className={'relative z-10'}/>
+                            </div>
                         </div>
                     </div>
                     <FadeSlide>
@@ -41,9 +51,13 @@ export default function About() {
                                     However, I do like to explore outside the boundaries of a browser.
                                 </div>
                             </div>
-                            <div className={'hidden h-full md:flex justify-center '}>
-                                <div className={'drop-shadow-xl inline-block border-b border-zinc-500 overflow-hidden relative bottom-32'}>
-                                    <img src={'portrait-remove-bg.png'} alt={'portrait'} className={'relative z-10 relative -bottom-32 '}/>
+                            <div className={'hidden h-full md:flex justify-center relative'}>
+                                <div className={''}>
+                                    <div className={' rounded-3xl border border-zinc-500'}>
+                                        <div id={'portrait-desktop'} className={'shadow-xl rounded-3xl border border-zinc-500 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
+                                            <img src={'portrait.png'} alt={'portrait'} className={'relative z-10 h-[30rem]'}/>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
