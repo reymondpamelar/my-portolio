@@ -14,14 +14,9 @@ export default function Projects() {
     return (
         <div className={'pt-24'}>
             <div className={'pl-4'}>
-                <h1 className={' text-8xl pl-4'}>
+                <h1 className={'text-6xl md:text-8xl pl-4'}>
                     Projects
                 </h1>
-                <div className={'mt-10 pl-4 space-y-4 text-xl'}>
-                    <div className={'bg-zinc-700 rounded-xl p-4 inline-block'}>
-                        Attached are a few of my projects!
-                    </div>
-                </div>
             </div>
 
         </div>

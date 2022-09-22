@@ -10,7 +10,7 @@ export default function About() {
     return (
         <div className={'pt-24'}>
             <div className={'px-4'}>
-                <h1 className={'text-8xl pl-4'}>
+                <h1 className={'text-6xl md:text-8xl pl-4'}>
                     About
                 </h1>
                 <div className={'text-lg mt-32 md:pl-10 pb-10'}>
