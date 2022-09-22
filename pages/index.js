@@ -34,7 +34,7 @@ export default function Home() {
     return (
         <DashboardLayout>
             <Head>
-                <title>Reymond's Portfolio</title>
+                <title>Reymond&apos;s Portfolio</title>
                 <meta name="description" content="A brief look at my work :)" />
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
