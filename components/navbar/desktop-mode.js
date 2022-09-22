@@ -10,7 +10,6 @@ export default function DesktopNavbar(props) {
             if(bodyTopPos < 0){
                 document.getElementById('nav').classList.add('opacity-100')
                 document.getElementById('nav').classList.remove('opacity-0')
-                console.log('asdas')
             }
             else{
                 document.getElementById('nav').classList.remove('bg-opacity-100')

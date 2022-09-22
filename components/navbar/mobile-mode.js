@@ -11,7 +11,6 @@ export default function MobileNavbar(props) {
             if(bodyTopPos < 0){
                 document.getElementById('mobileNav').classList.add('opacity-100')
                 document.getElementById('mobileNav').classList.remove('opacity-0')
-                console.log('asdas')
             }
             else{
                 document.getElementById('mobileNav').classList.remove('bg-opacity-100')
