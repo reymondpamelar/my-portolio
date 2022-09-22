@@ -25,7 +25,7 @@ export default function DesktopNavbar(props) {
             </div>
             <FadeSlide className={'z-50 flex items-center gap-12 w-full p-5 px-12 relative'}>
                 <h4>RP</h4>
-                <div onClick={()=>props.setStep(0)} className={'cursor-pointer overflow-hidden relative font-asap tracking-widest'}>
+                <div onClick={()=>props.setStep(0)} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
                     <div>
                         / HOME
                     </div>

@@ -11,10 +11,12 @@ export default function About() {
 
     useEffect(() => {
         setTimeout(()=>{
-            document.getElementById('portrait-desktop').classList.add('-translate-x-6')
-            document.getElementById('portrait-desktop').classList.add('-translate-y-6')
-            document.getElementById('portrait-mobile').classList.add('-translate-x-6')
-            document.getElementById('portrait-mobile').classList.add('-translate-y-6')
+            if(document.getElementById('portrait-desktop') != null){
+                document.getElementById('portrait-desktop').classList.add('-translate-x-10')
+                document.getElementById('portrait-desktop').classList.add('-translate-y-10')
+                document.getElementById('portrait-mobile').classList.add('-translate-x-6')
+                document.getElementById('portrait-mobile').classList.add('-translate-y-6')
+            }
         },750)
     },[])
 
@@ -70,12 +72,12 @@ export default function About() {
                                 </div>
                                 <div className={'flex gap-10 font-asap'}>
                                     <BorderSlideButton onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')}>
-                                        <div className={'flex items-center gap-2 pb-2'}>
+                                        <div className={'flex items-center gap-2'}>
                                             <Icon.GitHub className={'w-4'}/> GITHUB
                                         </div>
                                     </BorderSlideButton>
                                     <BorderSlideButton onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')}>
-                                        <div className={'flex items-center gap-2 pb-2'}>
+                                        <div className={'flex items-center gap-2'}>
                                             <Icon.Linkedin className={'w-4'}/> LINKEDIN
                                         </div>
                                     </BorderSlideButton>
@@ -91,7 +93,7 @@ export default function About() {
                                                     SDSU 2021
                                                 </div>
                                             </div>
-                                            <img src={'portrait.png'} alt={'portrait'} className={'relative z-10 h-[30rem] group-hover:brightness-50 transition ease-in-out duration-300'}/>
+                                            <img src={'portrait.png'} alt={'portrait'} className={'relative z-10 h-[30rem] group-hover:brightness-50 transition ease-in-out duration-70000'}/>
                                         </div>
                                     </div>
                                 </div>
