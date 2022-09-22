@@ -1,6 +1,7 @@
 import * as Icon from 'react-feather'
 import DarkModeToggle from "../dark-mode/toggle";
 import {useEffect} from "react";
+import FadeSlide from "../flip-move/fadeSlide";
 
 export default function DesktopNavbar(props) {
 
@@ -22,7 +23,7 @@ export default function DesktopNavbar(props) {
         <div className={'flex justify-start w-full fixed top-0 z-50'}>
             <div id={'nav'}  className={'bg-gradient-to-t from-transparent to-mainWhite dark:to-zinc-900 transition ease-in-out duration-500 h-full w-full absolute'}>
             </div>
-            <div className={'z-50 flex items-center gap-12 w-full p-5 px-12 relative'}>
+            <FadeSlide className={'z-50 flex items-center gap-12 w-full p-5 px-12 relative'}>
                 <h4>RP</h4>
                 <div onClick={()=>props.setStep(0)} className={'cursor-pointer p-2 overflow-hidden relative'}>
                     <div>
@@ -45,7 +46,7 @@ export default function DesktopNavbar(props) {
                 <div>
                     <DarkModeToggle/>
                 </div>
-            </div>
+            </FadeSlide>
         </div>
     )
 }

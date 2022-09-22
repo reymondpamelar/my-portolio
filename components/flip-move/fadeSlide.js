@@ -19,10 +19,8 @@ export default function FadeSlide(props){
     })
 
     return(
-        <div>
-            <FlipMove enterAnimation={customEnterAnimation} leaveAnimation={customLeaveAnimation} staggerDelayBy={200} staggerDurationBy={50}>
-                {children}
-            </FlipMove>
-        </div>
+        <FlipMove className={props.className} enterAnimation={customEnterAnimation} leaveAnimation={customLeaveAnimation} staggerDelayBy={200} staggerDurationBy={50}>
+            {children}
+        </FlipMove>
     )
 }
