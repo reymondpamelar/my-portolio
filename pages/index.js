@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import DashboardLayout from "../layouts/dashboard";
 import Home from "../containers/dashboard/home";
 import About from "../containers/dashboard/about";
@@ -13,6 +13,10 @@ import Head from "next/head";
 export default function Start() {
 
     const [step, setStep] = useState(0)
+
+    useEffect(() => {
+        document.getElementById('main').scrollTo(0, 0)
+    }, [step])
     const pages = [
         {index:0, title:'Home', content:<Home setStep={setStep}/>},
         {index:1, title:'About', content:<About/>},

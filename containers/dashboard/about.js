@@ -3,6 +3,8 @@ import 'animate.css';
 import * as Icon from 'react-feather'
 import { motion } from "framer-motion"
 import FadeSlide from "../../components/flip-move/fadeSlide";
+import Lottie from "react-lottie";
+import animationData from "/public/circle-data.json";
 
 export default function About() {
 
@@ -15,17 +17,26 @@ export default function About() {
         },750)
     },[])
 
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+        }
+    };
+
     return (
         <div className={'pt-24'}>
             <div className={'px-4'}>
-                <h1 className={'text-6xl md:text-8xl pl-4'}>
+                <h1 className={'text-6xl md:text-8xl pl-8'}>
                     About
                 </h1>
                 <div className={'text-lg md:mt-32 pb-10'}>
                     <div className={'md:hidden h-full flex justify-center relative p-8 ml-4 relative'}>
                         <div className={' rounded-3xl border border-zinc-500'}>
                             <div id={'portrait-mobile'} className={'group shadow-2xl rounded-3xl border border-zinc-500 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
-                                <div className={'absolute left-0 z-50 inset-0 flex grid items-center text-4xl font font-asap font-bold w-1/2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-300 p-4'}>
+                                <div className={'absolute left-0 z-50 inset-0 flex grid items-center text-4xl text-white font font-asap font-bold w-1/2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-300 p-4'}>
                                     REYMOND PAMELAR
                                     <div className={'text-xl'}>
                                         SDSU 2021
@@ -37,7 +48,7 @@ export default function About() {
                     </div>
                     <FadeSlide>
                         <div key={'quote1'} className={' grid md:grid-cols-2 mb-20 md:pl-10'}>
-                            <div className={'space-y-6 p-4'}>
+                            <FadeSlide className={'space-y-6 p-4'}>
                                 <h3>
                                     Hello!
                                 </h3>
@@ -56,7 +67,15 @@ export default function About() {
                                 <div>
                                     However, I do like to explore outside the boundaries of a browser.
                                 </div>
-                            </div>
+                                <div className={' flex gap-6'}>
+                                    <div className={''}>
+                                        <Icon.GitHub/>
+                                    </div>
+                                    <div className={''}>
+                                        <Icon.Linkedin/>
+                                    </div>
+                                </div>
+                            </FadeSlide>
                             <div className={'hidden h-full md:flex justify-center relative'}>
                                 <div className={''}>
                                     <div className={' rounded-3xl border border-zinc-500'}>

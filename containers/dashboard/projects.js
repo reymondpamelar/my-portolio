@@ -14,7 +14,7 @@ export default function Projects() {
     return (
         <div className={'pt-24'}>
             <div className={'pl-4'}>
-                <h1 className={'text-6xl md:text-8xl pl-4'}>
+                <h1 className={'text-6xl md:text-8xl pl-8'}>
                     Projects
                 </h1>
             </div>

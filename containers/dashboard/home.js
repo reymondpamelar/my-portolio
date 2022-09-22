@@ -43,7 +43,7 @@ export default function Home(props) {
                         </button>
                     </FadeSlide>
                 </div>
-                <div className={'absolute bottom-6 right-6 flex gap-10'}>
+                <div className={'absolute bottom-6 right-6 flex gap-6'}>
                     <div className={''}>
                         <Icon.GitHub/>
                     </div>
