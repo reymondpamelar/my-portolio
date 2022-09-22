@@ -10,6 +10,7 @@ module.exports = {
     './containers/**/*.{js,ts,jsx,tsx}',
     './styles/**/*.{js,ts,jsx,tsx}',
   ],
+  optimizeFonts: false,
   darkMode: 'class', // or 'media' or 'class',
   target: 'relaxed',
   prefix: '',
