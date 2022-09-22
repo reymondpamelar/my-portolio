@@ -30,7 +30,7 @@ export default function About() {
         <div className={'pt-24'}>
             <div className={'px-4'}>
                 <h1 className={'text-6xl md:text-8xl pl-8'}>
-                    About
+                    / About
                 </h1>
                 <div className={'text-lg md:mt-32 pb-10'}>
                     <div className={'md:hidden h-full flex justify-center relative p-8 ml-4 relative'}>

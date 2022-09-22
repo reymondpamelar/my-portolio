@@ -55,19 +55,19 @@ export default function MobileNavbar(props) {
                                     <FadeSlide className={' h-screen w-screen dark:bg-zinc-800 bg-mainWhite flex flex-col items-center justify-center space-y-10 transition ease-in-out duration-300'}>
                                         <div onClick={()=>changePage(0)} className={' cursor-pointer p-2 overflow-hidden relative'}>
                                             <h2 className={'flex items-center font-asap tracking-widest'}>
-                                                HOME
+                                                / HOME
                                             </h2>
                                             <div className={props.step !== 0 ? 'translate-x-48 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
                                         </div>
                                         <div onClick={()=>changePage(1)} className={' cursor-pointer p-2 overflow-hidden relative'}>
                                             <h2 className={'flex items-center font-asap tracking-widest'}>
-                                                ABOUT
+                                                / ABOUT
                                             </h2>
                                             <div className={props.step !== 1 ? 'translate-x-48 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
                                         </div>
                                         <div onClick={()=>changePage(2)} className={' cursor-pointer p-2 overflow-hidden relative'}>
                                             <h2 className={'flex items-center font-asap tracking-widest'}>
-                                                PROJECTS
+                                                / PROJECTS
                                             </h2>
                                             <div className={props.step !== 2 ? 'translate-x-56 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
                                         </div>

@@ -15,7 +15,7 @@ export default function Projects() {
         <div className={'pt-24'}>
             <div className={'pl-4'}>
                 <h1 className={'text-6xl md:text-8xl pl-8'}>
-                    Projects
+                    / Projects
                 </h1>
             </div>
 
