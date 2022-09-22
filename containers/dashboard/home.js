@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import * as Icon from 'react-feather'
 import FadeSlide from "../../components/flip-move/fadeSlide";
 
-export default function Home() {
+export default function Home(props) {
     const particlesInit = (main) => {
         return loadTrianglesPreset(main)
     };
@@ -25,19 +25,19 @@ export default function Home() {
             <div className={'fixed h-screen w-screen flex items-center grid z-10'}>
                 <div className={'relative pl-10 md:pl-20'}>
                     <FadeSlide>
-                        <h1 className={'md:text-7xl'}>
+                        <h1 className={'text-3xl md:text-7xl'}>
                             <div className={''}>
                                 <span className={'text-pblue'}> Reymond Pamelar</span>
                             </div>
                         </h1>
-                        <h1 className={'md:text-7xl'}>
+                        <h1 className={'text-3xl md:text-7xl'}>
                             <div className={' '}>
                                 Front-end Web Developer
                             </div>
                         </h1>
-                        <button className={'cursor-pointer mt-10 font-asap tracking-widest text-lg group overflow-hidden'}>
+                        <button onClick={() => props.setStep(2)} className={'cursor-pointer mt-10 font-asap tracking-widest text-lg group overflow-hidden'}>
                             VIEW PROJECTS
-                            <div className={'border-b w-full -translate-x-20 transition ease-in-out duration-300 group-hover:translate-x-0'}>
+                            <div className={'border-b border-zinc-700 dark:border-white w-full -translate-x-20 transition ease-in-out duration-300 group-hover:translate-x-0'}>
 
                             </div>
                         </button>

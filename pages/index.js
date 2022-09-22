@@ -14,7 +14,7 @@ export default function Start() {
 
     const [step, setStep] = useState(0)
     const pages = [
-        {index:0, title:'Home', content:<Home/>},
+        {index:0, title:'Home', content:<Home setStep={setStep}/>},
         {index:1, title:'About', content:<About/>},
         {index:2, title:'Projects', content:<Projects/>},
     ]
