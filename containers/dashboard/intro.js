@@ -21,19 +21,44 @@ export default function Intro() {
     }
 
     return (
-        <div>
-            <div className={'ml-4'}>
-                <h1 className={'relative top-24 text-8xl z-20 pl-4'}>
-                    Home
-                </h1>
+        <div content={'relative'}>
+            <div className={'fixed h-screen grid z-10'}>
+                <div className={'ml-4 z-10 mt-24'}>
+                    <h1 className={' text-8xl z-20 pl-4'}>
+                        Home
+                    </h1>
+                </div>
+                <div className={'relative pl-10 md:pl-20 grow'}>
+                    <FadeSlide>
+                        <h1 className={' text-xl text-3xl md:text-5xl'}>
+                            <div className={''}>
+                                <span className={'text-pblue'}> Reymond Pamelar</span>
+                            </div>
+                        </h1>
+                        <h1 className={' text-xl text-3xl md:text-5xl'}>
+                            <div className={' '}>
+                                Front-end Web Developer
+                            </div>
+                        </h1>
+                        <div className={''}>
+                            Welcome to my portfolio.
+                        </div>
+                        <div className={'cursor-pointer flex font-bold mt-4 absolute -bottom-20'}>
+                            <div className={'p-4 px-10 shadow-xl bg-zinc-500 border dark:border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5 rounded-l-xl flex items-center justify-center transition ease-in-out duration-300'}>About</div>
+                            <div className={'bg-pblue flex justify-center items-center p-4 rounded-r-xl text-white'}>
+                                <Icon.ChevronRight/>
+                            </div>
+                        </div>
+                    </FadeSlide>
+                </div>
             </div>
-            <div className={'flex items-center relative md:justify-start h-screen'}>
+            <div className={'flex items-center relative h-screen fixed top-0'}>
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 3 }}
-                    className={''}
+                    className={'h-full'}
                 >
                     <Particles
                         className={'absolute h-full w-full top-0'}
@@ -164,29 +189,6 @@ export default function Intro() {
                 </motion.div>
                 <div className={'absolute hidden dark:block w-full h-full bg-gradient-to-b from-transparent via-transparent to-zinc-800'}>
 
-                </div>
-                <div className={'relative pl-10 md:pl-20'}>
-                    <FadeSlide>
-                        <h1 className={' text-xl text-3xl md:text-5xl'}>
-                            <div className={''}>
-                                <span className={'text-pblue'}> Reymond Pamelar</span>
-                            </div>
-                        </h1>
-                        <h1 className={' text-xl text-3xl md:text-5xl'}>
-                            <div className={' '}>
-                                Front-end Web Developer
-                            </div>
-                        </h1>
-                        <div className={''}>
-                            Welcome to my portfolio.
-                        </div>
-                        <div className={'cursor-pointer flex font-bold mt-4 absolute -bottom-20'}>
-                            <div className={'p-4 px-10 shadow-xl bg-zinc-500 border dark:border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5 rounded-l-xl flex items-center justify-center transition ease-in-out duration-300'}>About</div>
-                            <div className={'bg-pblue flex justify-center items-center p-4 rounded-r-xl text-white'}>
-                                <Icon.ChevronRight/>
-                            </div>
-                        </div>
-                    </FadeSlide>
                 </div>
             </div>
         </div>
