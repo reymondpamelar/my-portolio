@@ -7,7 +7,6 @@ export default function DesktopNavbar(props) {
     useEffect(()=>{
         function addNavBg(){
             let bodyTopPos = document.getElementById('body').getBoundingClientRect().top;
-            console.log(bodyTopPos)
             if(bodyTopPos < 0){
                 document.getElementById('nav').classList.add('opacity-100')
                 document.getElementById('nav').classList.remove('opacity-0')

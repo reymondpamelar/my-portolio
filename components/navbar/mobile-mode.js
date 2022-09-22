@@ -2,8 +2,25 @@ import * as Icon from 'react-feather'
 import DarkModeToggle from "../dark-mode/toggle";
 import {useState} from "react";
 import FadeSlide from "../flip-move/fadeSlide";
+import {useEffect} from "react";
 
 export default function MobileNavbar(props) {
+    useEffect(()=>{
+        function addNavBg(){
+            let bodyTopPos = document.getElementById('body').getBoundingClientRect().top;
+            if(bodyTopPos < 0){
+                document.getElementById('mobileNav').classList.add('opacity-100')
+                document.getElementById('mobileNav').classList.remove('opacity-0')
+                console.log('asdas')
+            }
+            else{
+                document.getElementById('mobileNav').classList.remove('bg-opacity-100')
+                document.getElementById('mobileNav').classList.add('opacity-0')
+            }
+        }
+        document.getElementById('main').addEventListener('scroll', addNavBg, false)
+    },[])
+
     const [showMenu, setShowMenu] = useState(false)
 
     function changePage(step) {
@@ -14,6 +31,8 @@ export default function MobileNavbar(props) {
     }
     return (
         <div className={'w-full fixed top-0 z-50'}>
+            <div id={'mobileNav'}  className={'bg-gradient-to-t from-transparent to-mainWhite dark:to-zinc-900 opacity-0 transition ease-in-out duration-200 h-full w-full absolute'}>
+            </div>
             <div className={'relative'}>
                 <div className={'z-50 flex items-center gap-12 rounded-b-2xl p-5 px-12'}>
                     <h4>RP</h4>
