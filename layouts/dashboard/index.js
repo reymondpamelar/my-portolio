@@ -11,7 +11,6 @@ export default function DashboardLayout({children}) {
                     {children}
                     </body>
                 </div>
-                <ContactBar/>
             </div>
         </div>
     )
