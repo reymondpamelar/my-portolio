@@ -25,21 +25,21 @@ export default function DesktopNavbar(props) {
             </div>
             <FadeSlide className={'z-50 flex items-center gap-12 w-full p-5 px-12 relative'}>
                 <h4>RP</h4>
-                <div onClick={()=>props.setStep(0)} className={'cursor-pointer p-2 overflow-hidden relative'}>
+                <div onClick={()=>props.setStep(0)} className={'cursor-pointer overflow-hidden relative font-asap tracking-widest'}>
                     <div>
-                        Home &gt;
+                        /HOME
                     </div>
                     <div className={props.step !== 0 ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
                 </div>
-                <div onClick={()=>props.setStep(1)} className={'cursor-pointer p-2 overflow-hidden relative'}>
+                <div onClick={()=>props.setStep(1)} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
                     <div>
-                        About &gt;
+                        /ABOUT
                     </div>
                     <div className={props.step !== 1 ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
                 </div>
-                <div onClick={()=>props.setStep(2)} className={'cursor-pointer p-2 overflow-hidden relative'}>
+                <div onClick={()=>props.setStep(2)} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
                     <div>
-                        Projects &gt;
+                        /PROJECTS
                     </div>
                     <div className={props.step !== 2 ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
                 </div>

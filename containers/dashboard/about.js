@@ -54,73 +54,17 @@ export default function About() {
                             <div className={'hidden h-full md:flex justify-center relative'}>
                                 <div className={''}>
                                     <div className={' rounded-3xl border border-zinc-500'}>
-                                        <div id={'portrait-desktop'} className={'shadow-xl rounded-3xl border border-zinc-500 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
-                                            <img src={'portrait.png'} alt={'portrait'} className={'relative z-10 h-[30rem]'}/>
+                                        <div id={'portrait-desktop'} className={'group relative shadow-xl rounded-3xl border border-zinc-500 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
+                                            <div className={'absolute left-0 z-50 inset-0 flex grid items-center text-4xl font font-asap font-bold w-1/2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-300 p-4'}>
+                                                REYMOND PAMELAR
+                                                <div className={'text-xl'}>
+                                                    SDSU 2021
+                                                </div>
+                                            </div>
+                                            <img src={'portrait.png'} alt={'portrait'} className={'relative z-10 h-[30rem] group-hover:brightness-50 transition ease-in-out duration-300'}/>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div key={'quote2'} className={'grid my-20 rounded-xl md:px-10'}>
-                            <div className={' rounded-xl p-4'}>
-                                <div className={'border-b flex grid grid-cols-2 justify-center rounded-t-xl p-3'}>
-                                    <h4>
-                                        Languages
-                                    </h4>
-                                    <div className={'flex justify-end'}>
-                                        <Icon.Code size={50}/>
-                                    </div>
-                                </div>
-                                <ul className={'flex flex-wrap text-center justify-center rounded-b-xl p-3'}>
-                                    <li className={'px-4 grow'}>Javascript</li>
-                                    <li className={'px-4 grow'}>HTML</li>
-                                    <li className={'px-4 grow'}>CSS</li>
-                                    <li className={'px-4 grow'}>Java</li>
-                                    <li className={'px-4 grow'}>C</li>
-                                    <li className={'px-4 grow'}>C++</li>
-                                    <li className={'px-4 grow'}>C#</li>
-                                    <li className={'px-4 grow'}>Python</li>
-                                </ul>
-                            </div>
-                            <div className={' rounded-xl p-4'}>
-                                <div className={'border-b flex grid grid-cols-2 justify-center rounded-t-xl p-3'}>
-                                    <h4>
-                                        Frameworks
-                                    </h4>
-                                    <div className={'flex justify-end'}>
-                                        <Icon.GitBranch size={50}/>
-                                    </div>
-                                </div>
-                                <ul className={'flex flex-wrap text-center justify-center rounded-b-xl p-3'}>
-                                    <li className={'px-4 grow'}>Next.js</li>
-                                    <li className={'px-4 grow'}>React.js</li>
-                                    <li className={'px-4 grow'}>React Native</li>
-                                    <li className={'px-4 grow'}>TailwindCSS</li>
-                                    <li className={'px-4 grow'}>Express.js</li>
-                                </ul>
-                            </div>
-                            <div className={' rounded-xl p-4'}>
-                                <div className={'border-b flex grid grid-cols-2 justify-center rounded-t-xl p-3'}>
-                                    <h4>
-                                        Developer Tools
-                                    </h4>
-                                    <div className={'flex justify-end'}>
-                                        <Icon.Tool size={50}/>
-                                    </div>
-                                </div>
-                                <ul className={'flex flex-wrap text-center justify-center rounded-b-xl p-3'}>
-                                    <li className={'px-4 grow'}>Node.js</li>
-                                    <li className={'px-4 grow'}>Ceramic</li>
-                                    <li className={'px-4 grow'}>Metamask</li>
-                                    <li className={'px-4 grow'}>React Redux</li>
-                                    <li className={'px-4 grow'}>Storybook</li>
-                                    <li className={'px-4 grow'}>Miro</li>
-                                    <li className={'px-4 grow'}>Figma</li>
-                                    <li className={'px-4 grow'}>MongoDB</li>
-                                    <li className={'px-4 grow'}>Postman</li>
-                                    <li className={'px-4 grow'}>Git</li>
-                                    <li className={'px-4 grow'}>Unity Engine</li>
-                                </ul>
                             </div>
                         </div>
                     </FadeSlide>

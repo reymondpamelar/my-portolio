@@ -287,6 +287,7 @@ module.exports = {
                 }
             },
             fontFamily: {
+                asap:['Asap Condensed'],
                 'open-sans': ['"Open Sans"'],
                 poppins: ['Poppins'],
                 galano: ['Galano'],

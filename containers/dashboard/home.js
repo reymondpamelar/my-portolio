@@ -22,29 +22,34 @@ export default function Home() {
 
     return (
         <div content={''}>
-            <div className={'fixed h-screen flex items-center grid z-10'}>
+            <div className={'fixed h-screen w-screen flex items-center grid z-10'}>
                 <div className={'relative pl-10 md:pl-20'}>
                     <FadeSlide>
-                        <h1 className={' text-xl text-3xl md:text-5xl'}>
+                        <h1 className={'md:text-7xl'}>
                             <div className={''}>
                                 <span className={'text-pblue'}> Reymond Pamelar</span>
                             </div>
                         </h1>
-                        <h1 className={' text-xl text-3xl md:text-5xl'}>
+                        <h1 className={'md:text-7xl'}>
                             <div className={' '}>
                                 Front-end Web Developer
                             </div>
                         </h1>
-                        <div className={'py-6 text-lg'}>
-                            Welcome to my portfolio.
-                        </div>
-                        <button className={'cursor-pointer flex font-bold mt-4'}>
-                            <div className={'p-3 md:p-4 px-6 md:px-10 shadow-xl bg-zinc-500 border border-zinc-200 dark:border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5 rounded-l-xl flex items-center justify-center transition ease-in-out duration-300'}>About</div>
-                            <div className={'h-full bg-pblue flex justify-center items-center p-3 md:p-4 rounded-r-xl text-white'}>
-                                <Icon.ChevronRight/>
+                        <button className={'cursor-pointer mt-10 font-asap tracking-widest text-lg group overflow-hidden'}>
+                            VIEW PROJECTS
+                            <div className={'border-b w-full -translate-x-20 transition ease-in-out duration-300 group-hover:translate-x-0'}>
+
                             </div>
                         </button>
                     </FadeSlide>
+                </div>
+                <div className={'absolute bottom-6 right-6 flex gap-10'}>
+                    <div className={''}>
+                        <Icon.GitHub/>
+                    </div>
+                    <div className={''}>
+                        <Icon.Linkedin/>
+                    </div>
                 </div>
             </div>
             <div className={'flex relative h-screen fixed top-0'}>
