@@ -32,7 +32,7 @@ export default function About() {
     return (
         <div className={'pt-24'}>
             <div className={'px-4'}>
-                <h1 className={'text-5xl md:text-8xl md:pl-8'}>
+                <h1 className={'text-5xl md:text-8xl pl-8'}>
                     / About
                 </h1>
                 <div className={'text-lg md:mt-32 pb-10'}>
