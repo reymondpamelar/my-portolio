@@ -7,7 +7,7 @@ export default function DarkModeToggle (){
     return (
         <label>
             <button onClick={ () => setIsDark(!isDark)} className="flex justify-center items-center">
-                <img className={'object-contain w-5 dark:invert'} src={'/darkMode.png'}/>
+                <img className={'object-contain w-5 dark:invert'} src={'/darkMode.png'} alt={'Dark Mode'}/>
             </button>
         </label>
     )

@@ -38,7 +38,7 @@ export default function About() {
                             </div>
                             <div className={'h-full flex justify-center '}>
                                 <div className={'drop-shadow-xl inline-block border-b border-zinc-500 overflow-hidden relative bottom-32'}>
-                                    <img src={'portrait-remove-bg.png'} className={'relative z-10 relative -bottom-32 animate__animated animate__fadeInUp'}/>
+                                    <img src={'portrait-remove-bg.png'} alt={'portrait'} className={'relative z-10 relative -bottom-32 animate__animated animate__fadeInUp'}/>
                                 </div>
                             </div>
                         </div>
