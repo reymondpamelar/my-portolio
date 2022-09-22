@@ -31,7 +31,7 @@ export default function MobileNavbar(props) {
             <FadeSlide>
                 {
                     showMenu ?
-                        <div key={'menu'} className={'h-screen dark:bg-zinc-800 bg-mainWhite flex flex-col items-center pt-20 space-y-10 transition ease-in-out duration-300 animate-slideLeft'}>
+                        <div key={'menu'} className={'h-screen dark:bg-zinc-800 bg-mainWhite flex flex-col items-center pt-20 space-y-10 transition ease-in-out duration-300'}>
                             <div onClick={()=>changePage(0)} className={' cursor-pointer p-2 overflow-hidden relative'}>
                                 <h2 className={'flex items-center'}>
                                     Home
