@@ -5,6 +5,7 @@ import { loadTrianglesPreset } from "tsparticles-preset-triangles";
 import { motion } from "framer-motion"
 import * as Icon from 'react-feather'
 import FadeSlide from "../../components/flip-move/fadeSlide";
+import BorderSlideButton from "../../components/general-ui/buttons/border-slide-button";
 
 export default function Home(props) {
     const particlesInit = (main) => {
@@ -35,20 +36,25 @@ export default function Home(props) {
                                 Front-end Web Developer
                             </div>
                         </h1>
-                        <button onClick={() => props.setStep(2)} className={'cursor-pointer mt-10 font-asap tracking-widest text-lg group overflow-hidden'}>
-                            VIEW PROJECTS
-                            <div className={'border-b border-zinc-700 dark:border-white w-full -translate-x-20 transition ease-in-out duration-300 group-hover:translate-x-0'}>
-
-                            </div>
-                        </button>
+                        <div className={'mt-10'}>
+                            <BorderSlideButton onClick={() => props.setStep(2)}>
+                                VIEW PROJECTS
+                            </BorderSlideButton>
+                        </div>
                     </FadeSlide>
                 </div>
-                <div className={'absolute bottom-6 right-6 flex gap-6'}>
-                    <div className={''}>
-                        <Icon.GitHub/>
-                    </div>
-                    <div className={''}>
-                        <Icon.Linkedin/>
+                <div className={'absolute bottom-4 right-6'}>
+                    <div className={'flex gap-10 font-asap'}>
+                        <div className={'cursor-pointer'} onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')}>
+                            <div className={'flex items-center gap-2 pb-2'}>
+                                <Icon.GitHub className={'w-5'}/>
+                            </div>
+                        </div>
+                        <div className={'cursor-pointer'} onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')}>
+                            <div className={'flex items-center gap-2 pb-2'}>
+                                <Icon.Linkedin className={'w-5'}/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

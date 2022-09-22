@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import FadeSlide from "../../components/flip-move/fadeSlide";
 import Lottie from "react-lottie";
 import animationData from "/public/circle-data.json";
+import BorderSlideButton from "../../components/general-ui/buttons/border-slide-button";
 
 export default function About() {
 
@@ -47,7 +48,7 @@ export default function About() {
                         </div>
                     </div>
                     <FadeSlide>
-                        <div key={'quote1'} className={' grid md:grid-cols-2 mb-20 md:pl-10'}>
+                        <div key={'quote1'} className={' grid md:grid-cols-2 md:pl-10'}>
                             <FadeSlide className={'space-y-6 p-4'}>
                                 <h3>
                                     Hello!
@@ -67,16 +68,20 @@ export default function About() {
                                 <div>
                                     However, I do like to explore outside the boundaries of a browser.
                                 </div>
-                                <div className={' flex gap-6'}>
-                                    <div className={''}>
-                                        <Icon.GitHub/>
-                                    </div>
-                                    <div className={''}>
-                                        <Icon.Linkedin/>
-                                    </div>
+                                <div className={'flex gap-10 font-asap'}>
+                                    <BorderSlideButton onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')}>
+                                        <div className={'flex items-center gap-2 pb-2'}>
+                                            <Icon.GitHub className={'w-4'}/> GITHUB
+                                        </div>
+                                    </BorderSlideButton>
+                                    <BorderSlideButton onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')}>
+                                        <div className={'flex items-center gap-2 pb-2'}>
+                                            <Icon.Linkedin className={'w-4'}/> LINKEDIN
+                                        </div>
+                                    </BorderSlideButton>
                                 </div>
                             </FadeSlide>
-                            <div className={'hidden h-full md:flex justify-center relative'}>
+                            <div className={'hidden h-full md:flex justify-center items-end relative'}>
                                 <div className={''}>
                                     <div className={' rounded-3xl border border-zinc-500'}>
                                         <div id={'portrait-desktop'} className={'group relative shadow-xl rounded-3xl border border-zinc-500 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
