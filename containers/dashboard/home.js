@@ -23,7 +23,7 @@ export default function Home(props) {
 
     return (
         <div content={''}>
-            <div className={'fixed h-screen w-screen flex items-center grid z-10'}>
+            <div className={'fixed h-screen w-screen flex items-center grid z-50'}>
                 <div className={'relative pl-10 md:pl-20'}>
                     <FadeSlide>
                         <h1 className={'text-3xl md:text-7xl'}>

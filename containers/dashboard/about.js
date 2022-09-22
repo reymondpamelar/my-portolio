@@ -35,7 +35,7 @@ export default function About() {
                 <h1 className={'text-5xl md:text-8xl pl-8'}>
                     / About
                 </h1>
-                <div className={'text-lg md:mt-32 pb-10'}>
+                <div className={'text-lg md:mt-32 pb-10 mb-20'}>
                     <div className={'md:hidden h-full flex justify-center relative p-8 ml-4 relative'}>
                         <div className={' rounded-3xl border border-zinc-500'}>
                             <div id={'portrait-mobile'} className={'group shadow-2xl rounded-3xl border border-zinc-500 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
