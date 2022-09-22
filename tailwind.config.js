@@ -3,20 +3,25 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   mode: 'jit',
   content: [
-    // Example content paths...
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './layouts/**/*.{js,ts,jsx,tsx}',
     './containers/**/*.{js,ts,jsx,tsx}',
     './styles/**/*.{js,ts,jsx,tsx}',
   ],
-  optimizeFonts: false,
   darkMode: 'class', // or 'media' or 'class',
   target: 'relaxed',
   prefix: '',
   important: false,
   separator: ':',
   theme: {
+    content: [
+      './pages/**/*.{js,ts,jsx,tsx}',
+      './components/**/*.{js,ts,jsx,tsx}',
+      './layouts/**/*.{js,ts,jsx,tsx}',
+      './containers/**/*.{js,ts,jsx,tsx}',
+      './styles/**/*.{js,ts,jsx,tsx}',
+    ],
     spacing: {
       px: '1px',
       '0': '0',
