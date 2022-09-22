@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import DashboardLayout from "../layouts/dashboard";
-import Intro from "../containers/dashboard/intro";
+import Home from "../containers/dashboard/home";
 import About from "../containers/dashboard/about";
 import Projects from "../containers/dashboard/projects";
 import FadeSlide from "../components/flip-move/fadeSlide";
@@ -10,22 +10,14 @@ import Particles from "react-tsparticles";
 import {loadTrianglesPreset} from "tsparticles-preset-triangles";
 import Head from "next/head";
 
-export default function Home() {
+export default function Start() {
 
     const [step, setStep] = useState(0)
     const pages = [
-        {index:0, title:'Intro', content:<Intro/>},
+        {index:0, title:'Home', content:<Home/>},
         {index:1, title:'About', content:<About/>},
         {index:2, title:'Projects', content:<Projects/>},
     ]
-
-    const particlesInit = (main) => {
-        return loadTrianglesPreset(main)
-    };
-
-    const particlesLoaded = (container) => {
-
-    };
 
     const variants = {
         hidden: { opacity: 0 },

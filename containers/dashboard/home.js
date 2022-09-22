@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import * as Icon from 'react-feather'
 import FadeSlide from "../../components/flip-move/fadeSlide";
 
-export default function Intro() {
+export default function Home() {
     const particlesInit = (main) => {
         return loadTrianglesPreset(main)
     };
@@ -21,14 +21,9 @@ export default function Intro() {
     }
 
     return (
-        <div content={'relative'}>
-            <div className={'fixed h-screen grid z-10'}>
-                <div className={'ml-4 z-10 mt-24'}>
-                    <h1 className={' text-8xl z-20 pl-4'}>
-                        Home
-                    </h1>
-                </div>
-                <div className={'relative pl-10 md:pl-20 grow'}>
+        <div content={''}>
+            <div className={'fixed h-screen flex items-center grid z-10'}>
+                <div className={'relative pl-10 md:pl-20'}>
                     <FadeSlide>
                         <h1 className={' text-xl text-3xl md:text-5xl'}>
                             <div className={''}>
@@ -40,32 +35,31 @@ export default function Intro() {
                                 Front-end Web Developer
                             </div>
                         </h1>
-                        <div className={''}>
+                        <div className={'py-6 text-lg'}>
                             Welcome to my portfolio.
                         </div>
-                        <div className={'cursor-pointer flex font-bold mt-4 absolute -bottom-20'}>
-                            <div className={'p-4 px-10 shadow-xl bg-zinc-500 border dark:border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5 rounded-l-xl flex items-center justify-center transition ease-in-out duration-300'}>About</div>
-                            <div className={'bg-pblue flex justify-center items-center p-4 rounded-r-xl text-white'}>
+                        <button className={'cursor-pointer flex font-bold mt-4'}>
+                            <div className={'p-3 md:p-4 px-6 md:px-10 shadow-xl bg-zinc-500 border border-zinc-200 dark:border-zinc-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5 rounded-l-xl flex items-center justify-center transition ease-in-out duration-300'}>About</div>
+                            <div className={'h-full bg-pblue flex justify-center items-center p-3 md:p-4 rounded-r-xl text-white'}>
                                 <Icon.ChevronRight/>
                             </div>
-                        </div>
+                        </button>
                     </FadeSlide>
                 </div>
             </div>
-            <div className={'flex items-center relative h-screen fixed top-0'}>
+            <div className={'flex relative h-screen fixed top-0'}>
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 3 }}
-                    className={'h-full'}
                 >
                     <Particles
                         className={'absolute h-full w-full top-0'}
                         init={particlesInit}
                         loaded={particlesLoaded}
                         options={{
-                            fullScreen: { enable: false },
+                            fullScreen: { enable: true },
                             fpsLimit: 60,
                             particles: {
                                 number: {
@@ -76,13 +70,13 @@ export default function Intro() {
                                     }
                                 },
                                 color: {
-                                    value: "#0979ff",
+                                    value: "#6B7280",
                                 },
                                 shape: {
                                     type: "circle",
                                     stroke: {
                                         width: 0,
-                                        color: "#000000"
+                                        color: "#6B7280"
                                     },
                                     polygon: {
                                         nb_sides: 5
@@ -120,7 +114,7 @@ export default function Intro() {
                                     width: 1,
                                     triangles: {
                                         enable: true,
-                                        color: "#0979ff",
+                                        color: "#6B7280",
                                         opacity: 0.1
                                     }
                                 },
@@ -141,7 +135,7 @@ export default function Intro() {
                             interactivity: {
                                 detect_on: "canvas",
                                 events: {
-                                    onhover: {
+                                    onHover: {
                                         enable: true,
                                         mode: "repulse"
                                     },
