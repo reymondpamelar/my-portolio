@@ -27,7 +27,7 @@ export default function Projects() {
                             github={''}
                             link={''}
                             imageSrc={'portfolio.png'}
-                            titleClassName={'bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}
+                            titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}
                         />
                     </div>
                     <div>
@@ -38,7 +38,7 @@ export default function Projects() {
                             github={''}
                             link={''}
                             imageSrc={'line-up.png'}
-                            titleClassName={'bg-clip-text text-transparent bg-gradient-to-r from-[#ECB984] via-[#D58258] to-[#963A2F] background-animate'}
+                            titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#ECB984] via-[#D58258] to-[#963A2F] background-animate'}
                         />
                     </div>
                     <div>
@@ -49,7 +49,7 @@ export default function Projects() {
                             github={''}
                             link={''}
                             imageSrc={'Privatyze.png'}
-                            titleClassName={'bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-pblue to-pgreen background-animate'}
+                            titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-pblue to-pgreen background-animate'}
                         />
                     </div>
                 </FadeSlide>
