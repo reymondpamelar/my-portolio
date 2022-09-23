@@ -26,6 +26,20 @@ export default function Home(props) {
             <div className={'fixed h-screen w-screen flex items-center grid z-50'}>
                 <div className={'relative pl-10 md:pl-20'}>
                     <FadeSlide>
+                        <div className={'pb-10'}>
+                            <div className={'flex gap-10 font-asap'}>
+                                <div className={'cursor-pointer'} onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')}>
+                                    <div className={'flex items-center gap-2'}>
+                                        <Icon.GitHub className={'w-5'}/>
+                                    </div>
+                                </div>
+                                <div className={' cursor-pointer'} onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')}>
+                                    <div className={'flex items-center gap-2'}>
+                                        <Icon.Linkedin className={'w-5'}/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <h1 className={'text-3xl md:text-7xl'}>
                             <div className={''}>
                                 <span className={'text-pblue'}> Reymond Pamelar</span>
@@ -42,20 +56,6 @@ export default function Home(props) {
                             </BorderSlideButton>
                         </div>
                     </FadeSlide>
-                </div>
-                <div className={'absolute bottom-4 right-6'}>
-                    <div className={'flex gap-10 font-asap'}>
-                        <div className={'cursor-pointer'} onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')}>
-                            <div className={'flex items-center gap-2 pb-2'}>
-                                <Icon.GitHub className={'w-5'}/>
-                            </div>
-                        </div>
-                        <div className={'cursor-pointer'} onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')}>
-                            <div className={'flex items-center gap-2 pb-2'}>
-                                <Icon.Linkedin className={'w-5'}/>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div className={'flex relative h-screen fixed top-0'}>
