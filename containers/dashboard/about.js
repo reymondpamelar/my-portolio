@@ -50,7 +50,7 @@ export default function About() {
                         </div>
                     </div>
                     <FadeSlide>
-                        <div key={'quote1'} className={' grid md:grid-cols-2 md:pl-10'}>
+                        <div key={'quote1'} className={' grid md:grid-cols-2 md:px-10'}>
                             <FadeSlide className={'space-y-6 p-4'}>
                                 <h3>
                                     Hello!
@@ -93,7 +93,7 @@ export default function About() {
                                                     SDSU 2021
                                                 </div>
                                             </div>
-                                            <img src={'portrait.png'} alt={'portrait'} className={'relative z-10 lg:h-[50rem] h-[30rem] group-hover:brightness-50 transition ease-in-out duration-700'}/>
+                                            <img src={'portrait.png'} alt={'portrait'} className={'relative z-10 xl:h-[50rem] h-[30rem] group-hover:brightness-50 transition ease-in-out duration-700'}/>
                                         </div>
                                     </div>
                                 </div>
