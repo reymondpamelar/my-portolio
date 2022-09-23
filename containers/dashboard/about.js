@@ -85,15 +85,15 @@ export default function About() {
                             </FadeSlide>
                             <div className={'hidden h-full md:flex justify-center items-end relative'}>
                                 <div className={''}>
-                                    <div className={' rounded-3xl border border-zinc-500'}>
-                                        <div id={'portrait-desktop'} className={'group relative shadow-xl rounded-3xl border border-zinc-500 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
+                                    <div className={' rounded-3xl border border-zinc-400'}>
+                                        <div id={'portrait-desktop'} className={'group relative shadow-xl rounded-3xl border border-zinc-400 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
                                             <div className={'absolute text-white left-0 z-50 inset-0 flex grid items-center text-4xl font font-asap font-bold w-1/2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-300 p-4'}>
                                                 REYMOND PAMELAR
                                                 <div className={'text-xl'}>
                                                     SDSU 2021
                                                 </div>
                                             </div>
-                                            <img src={'portrait.png'} alt={'portrait'} className={'relative z-10 h-[30rem] group-hover:brightness-50 transition ease-in-out duration-70000'}/>
+                                            <img src={'portrait.png'} alt={'portrait'} className={'relative z-10 lg:h-[50rem] h-[30rem] group-hover:brightness-50 transition ease-in-out duration-700'}/>
                                         </div>
                                     </div>
                                 </div>
