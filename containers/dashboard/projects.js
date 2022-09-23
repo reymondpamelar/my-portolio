@@ -3,9 +3,10 @@ import 'animate.css';
 import * as Icon from 'react-feather'
 import ProjectTemplate from "../../components/project-template";
 import FadeSlide from "../../components/flip-move/fadeSlide";
+import {useHorizontalScroll} from "../../components/general-ui/scroll/horizontal-scroll";
 
 export default function Projects() {
-
+    const scrollRef = useHorizontalScroll()
     return (
         <div className={'py-24 relative'}>
             <div className={'pl-4'}>
@@ -18,41 +19,43 @@ export default function Projects() {
                     scroll
                     <Icon.ChevronRight/>
                 </div>
-                <FadeSlide className={'flex overflow-scroll p-20 md:p-32 gap-32'}>
-                    <div>
-                        <ProjectTemplate
-                            number={'01'}
-                            title={'Portfolio'}
-                            techUsed={'Next.js | TailwindCSS'}
-                            github={''}
-                            link={''}
-                            imageSrc={'portfolio.png'}
-                            titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}
-                        />
-                    </div>
-                    <div>
-                        <ProjectTemplate
-                            number={'02'}
-                            title={'LINE UP!'}
-                            techUsed={'React.js | TailwindCSS | Electron.js | Node.js | Express.js'}
-                            github={''}
-                            link={''}
-                            imageSrc={'line-up.png'}
-                            titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#ECB984] via-[#D58258] to-[#963A2F] background-animate'}
-                        />
-                    </div>
-                    <div>
-                        <ProjectTemplate
-                            number={'03'}
-                            title={'Privatyze '}
-                            techUsed={'Next.js | Redux | TailwindCSS'}
-                            github={''}
-                            link={''}
-                            imageSrc={'Privatyze.png'}
-                            titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-pblue to-pgreen background-animate'}
-                        />
-                    </div>
-                </FadeSlide>
+                <div ref={scrollRef} className={' overflow-scroll'}>
+                    <FadeSlide className={'flex p-20 md:p-32 gap-32 whitespace-nowrap'}>
+                        <div>
+                            <ProjectTemplate
+                                number={'01'}
+                                title={'Portfolio'}
+                                techUsed={'Next.js | TailwindCSS'}
+                                github={''}
+                                link={''}
+                                imageSrc={'portfolio.png'}
+                                titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}
+                            />
+                        </div>
+                        <div>
+                            <ProjectTemplate
+                                number={'02'}
+                                title={'LINE UP!'}
+                                techUsed={'React.js | TailwindCSS | Electron.js | Node.js | Express.js'}
+                                github={''}
+                                link={''}
+                                imageSrc={'line-up.png'}
+                                titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#ECB984] via-[#D58258] to-[#963A2F] background-animate'}
+                            />
+                        </div>
+                        <div>
+                            <ProjectTemplate
+                                number={'03'}
+                                title={'Privatyze '}
+                                techUsed={'Next.js | Redux | TailwindCSS'}
+                                github={''}
+                                link={''}
+                                imageSrc={'Privatyze.png'}
+                                titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-pblue to-pgreen background-animate'}
+                            />
+                        </div>
+                    </FadeSlide>
+                </div>
                 <div className={'flex items-center text-lg absolute bottom-4 right-6 font-asap tracking-widest uppercase animate__animated animate-bounceRight'}>
                     scroll
                     <Icon.ChevronRight/>
