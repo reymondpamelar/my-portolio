@@ -22,6 +22,17 @@ export default function Projects() {
                     <div>
                         <ProjectTemplate
                             number={'01'}
+                            title={'Portfolio'}
+                            techUsed={'Next.js | TailwindCSS'}
+                            github={''}
+                            link={''}
+                            imageSrc={'portfolio.png'}
+                            titleClassName={'bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}
+                        />
+                    </div>
+                    <div>
+                        <ProjectTemplate
+                            number={'02'}
                             title={'LINE UP!'}
                             techUsed={'React.js | TailwindCSS | Electron.js | Node.js | Express.js'}
                             github={''}
@@ -32,7 +43,7 @@ export default function Projects() {
                     </div>
                     <div>
                         <ProjectTemplate
-                            number={'02'}
+                            number={'03'}
                             title={'Privatyze '}
                             techUsed={'Next.js | Redux | TailwindCSS'}
                             github={''}
