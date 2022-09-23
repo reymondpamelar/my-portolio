@@ -14,7 +14,7 @@ export default function Projects() {
                 </h1>
             </div>
             <div className={'relative mt-20'}>
-                <div className={'flex items-center text-lg absolute -top-10 right-6 font-asap tracking-widest uppercase animate__animated animate__pulse animate__slow animate__infinite'}>
+                <div className={'flex items-center text-lg absolute -top-10 right-6 font-asap tracking-widest uppercase animate-bounceRight'}>
                     scroll
                     <Icon.ChevronRight/>
                 </div>
@@ -27,7 +27,7 @@ export default function Projects() {
                             github={''}
                             link={''}
                             imageSrc={'line-up.png'}
-                            titleClassName={'bg-clip-text text-transparent bg-gradient-to-r from-[#ECB984] via-[#D58258] to-[#FFFEE9] background-animate'}
+                            titleClassName={'bg-clip-text text-transparent bg-gradient-to-r from-[#ECB984] via-[#D58258] to-[#963A2F] background-animate'}
                         />
                     </div>
                     <div>
@@ -38,11 +38,11 @@ export default function Projects() {
                             github={''}
                             link={''}
                             imageSrc={'Privatyze.png'}
-                            titleClassName={'bg-clip-text text-transparent bg-gradient-to-r from-blue-200 via-pblue to-white background-animate'}
+                            titleClassName={'bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-pblue to-pgreen background-animate'}
                         />
                     </div>
                 </FadeSlide>
-                <div className={'flex items-center text-lg absolute bottom-4 right-6 font-asap tracking-widest uppercase animate__animated animate__pulse animate__slow animate__infinite'}>
+                <div className={'flex items-center text-lg absolute bottom-4 right-6 font-asap tracking-widest uppercase animate__animated animate-bounceRight'}>
                     scroll
                     <Icon.ChevronRight/>
                 </div>

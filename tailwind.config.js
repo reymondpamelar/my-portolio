@@ -89,6 +89,7 @@ module.exports = {
                 'custombp': {'raw': '(max-height: 720px)'},
             },
             animation: {
+                bounceRight: 'bounceRight 2s ease-in-out infinite',
                 reversePing: 'reversePing 1s',
                 slideUp: 'slideUp 1s',
                 slideDown: 'slideDown 1s',
@@ -98,6 +99,14 @@ module.exports = {
                 rotate180: 'rotate180 ',
             },
             keyframes:{
+                bounceRight: {
+                    '0%, 100%': {
+                        transform: 'translateX(-6%)',
+                    },
+                    '50%': {
+                        transform: 'translateX(6%)',
+                    },
+                },
                 reversePing: {
                     '0%, 5%': {
                         opacity: '.5',
