@@ -20,7 +20,7 @@ export default function Projects() {
                     <Icon.ChevronRight/>
                 </div>
                 <div ref={scrollRef} className={' overflow-scroll'}>
-                    <FadeSlide className={'flex p-20 md:p-32 gap-32 whitespace-nowrap'}>
+                    <FadeSlide className={'flex p-20 md:p-32 gap-24 md:gap-32'}>
                         <div>
                             <ProjectTemplate
                                 number={'01'}
