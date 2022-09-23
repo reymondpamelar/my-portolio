@@ -18,25 +18,32 @@ export default function Projects() {
                     / Projects
                 </h1>
             </div>
-            <FadeSlide className={'flex overflow-scroll p-20 md:p-32 gap-32'}>
-                <ProjectTemplate
-                    title={'LINE UP!'}
-                    techUsed={'React.js | TailwindCSS | Electron.js | Node.js | Express.js'}
-                    github={''}
-                    link={''}
-                    imageSrc={'line-up.png'}
-                />
+            <div className={'relative'}>
+                <div className={'flex items-center text-lg absolute top-0 right-10 font-asap tracking-widest uppercase animate__animated animate__pulse animate__slow animate__infinite'}>
+                    scroll
+                    <Icon.ChevronRight/>
+                </div>
+                <FadeSlide className={'flex overflow-scroll p-20 md:p-32 gap-32'}>
+                    <ProjectTemplate
+                        title={'LINE UP!'}
+                        techUsed={'React.js | TailwindCSS | Electron.js | Node.js | Express.js'}
+                        github={''}
+                        link={''}
+                        imageSrc={'line-up.png'}
+                    />
 
-                <ProjectTemplate
-                    title={'Privatyze '}
-                    techUsed={'Next.js | Redux | TailwindCSS'}
-                    github={''}
-                    link={''}
-                    imageSrc={'Privatyze.png'}
-                />
-            </FadeSlide>
-            <div className={'text-lg absolute bottom-4 right-10 font-asap tracking-widest uppercase animate__animated animate__flash animate__slower animate__infinite'}>
-                scroll
+                    <ProjectTemplate
+                        title={'Privatyze '}
+                        techUsed={'Next.js | Redux | TailwindCSS'}
+                        github={''}
+                        link={''}
+                        imageSrc={'Privatyze.png'}
+                    />
+                </FadeSlide>
+                <div className={'flex items-center text-lg absolute bottom-4 right-10 font-asap tracking-widest uppercase animate__animated animate__pulse animate__slow animate__infinite'}>
+                    scroll
+                    <Icon.ChevronRight/>
+                </div>
             </div>
         </div>
     )
