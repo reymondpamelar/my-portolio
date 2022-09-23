@@ -30,7 +30,7 @@ export default function About() {
     };
 
     return (
-        <div className={'pt-24'}>
+        <div className={'py-24'}>
             <div className={'px-4'}>
                 <h1 className={'text-5xl md:text-8xl pl-8'}>
                     / About

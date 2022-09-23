@@ -7,7 +7,7 @@ import FadeSlide from "../../components/flip-move/fadeSlide";
 export default function Projects() {
 
     return (
-        <div className={'pt-24 pb-24 relative'}>
+        <div className={'py-24 relative'}>
             <div className={'pl-4'}>
                 <h1 className={'text-5xl md:text-8xl pl-8'}>
                     / Projects
