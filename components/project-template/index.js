@@ -29,7 +29,7 @@ export default function ProjectTemplate(props) {
                     </div>
                 </div>
                 <div className={'opacity-0 group-hover:opacity-50 absolute inset-0 flex transition ease-in-out duration-300'}>
-                    <img src={props.imageSrc} className={'object-none object-center h-full w-full bg-white rounded-3xl relative bg-white opacity-50'}/>
+                    <img src={props.imageSrc} className={'object-cover object-center h-full w-full bg-white rounded-3xl relative bg-white opacity-50'}/>
                 </div>
             </div>
         </div>
