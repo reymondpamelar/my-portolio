@@ -51,12 +51,12 @@ export default function About() {
                     </div>
                     <FadeSlide>
                         <div key={'quote1'} className={' grid md:grid-cols-2 md:px-10'}>
-                            <FadeSlide className={'space-y-6 p-4'}>
+                            <FadeSlide className={'space-y-6 p-4 xl:text-2xl xl:pr-20'}>
                                 <h3>
-                                    Hello!
+                                    Nice to meet you! 👋🏽
                                 </h3>
                                 <div>
-                                    I am <span className={'text-pblue font-bold'}>Reymond Pamelar</span>
+                                    I am <span className={'font-bold'}>Reymond Pamelar</span>
                                 </div>
                                 <div>
                                     Raised in sunny San Diego, CA, I have always had an interest in computer science. After graduating San Diego State University, I found a great interest in Web Development.
@@ -65,7 +65,7 @@ export default function About() {
                                     Interweaving my creativity with problem solving is what I do best!
                                 </div>
                                 <div>
-                                    I love to create <span className={'text-pblue font-bold'}>fluid</span> and <span className={'text-pblue font-bold'}>dynamic</span> web applications while keeping <span className={'text-pblue font-bold'}>responsiveness</span> and <span className={'text-pblue font-bold'}>accessibility</span> in mind.
+                                    I love to create <span className={'font-bold'}>fluid</span> and <span className={'font-bold'}>dynamic</span> web applications while keeping <span className={'font-bold'}>responsiveness</span> and <span className={'font-bold'}>accessibility</span> in mind.
                                 </div>
                                 <div>
                                     However, I do like to explore outside the boundaries of a browser.

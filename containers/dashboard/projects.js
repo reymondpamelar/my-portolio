@@ -27,6 +27,7 @@ export default function Projects() {
                             github={''}
                             link={''}
                             imageSrc={'line-up.png'}
+                            titleClassName={'bg-clip-text text-transparent bg-gradient-to-r from-[#ECB984] via-[#D58258] to-[#FFFEE9] background-animate'}
                         />
                     </div>
                     <div>
@@ -37,6 +38,7 @@ export default function Projects() {
                             github={''}
                             link={''}
                             imageSrc={'Privatyze.png'}
+                            titleClassName={'bg-clip-text text-transparent bg-gradient-to-r from-blue-200 via-pblue to-white background-animate'}
                         />
                     </div>
                 </FadeSlide>

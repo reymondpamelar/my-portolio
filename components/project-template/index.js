@@ -19,7 +19,7 @@ export default function ProjectTemplate(props) {
                     <div className={'text-7xl font-galano absolute -left-8 -top-8'}>
                         {props.number}
                     </div>
-                    <h2 className={'text-4xl md:text-5xl'}>{props.title}</h2>
+                    <h2 className={props.titleClassName}>{props.title}</h2>
                     <div>
                         {props.techUsed}
                     </div>

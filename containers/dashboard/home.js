@@ -28,21 +28,21 @@ export default function Home(props) {
                     <FadeSlide>
                         <div className={'pb-10'}>
                             <div className={'flex gap-10 font-asap'}>
-                                <div className={'cursor-pointer'} onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')}>
+                                <BorderSlideButton onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')}>
                                     <div className={'flex items-center gap-2'}>
-                                        <Icon.GitHub className={'w-5'}/>
+                                        <Icon.GitHub className={'w-4'}/> GITHUB
                                     </div>
-                                </div>
-                                <div className={' cursor-pointer'} onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')}>
+                                </BorderSlideButton>
+                                <BorderSlideButton onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')}>
                                     <div className={'flex items-center gap-2'}>
-                                        <Icon.Linkedin className={'w-5'}/>
+                                        <Icon.Linkedin className={'w-4'}/> LINKEDIN
                                     </div>
-                                </div>
+                                </BorderSlideButton>
                             </div>
                         </div>
                         <h1 className={'text-3xl md:text-7xl'}>
                             <div className={''}>
-                                <span className={'text-pblue'}> Reymond Pamelar</span>
+                                <span className={'text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}> Reymond Pamelar</span>
                             </div>
                         </h1>
                         <h1 className={'text-3xl md:text-7xl'}>
