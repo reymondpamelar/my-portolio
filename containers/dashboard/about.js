@@ -37,8 +37,8 @@ export default function About() {
                 </h1>
                 <div className={'text-lg md:mt-32 pb-10 mb-20'}>
                     <div className={'md:hidden h-full flex justify-center relative p-8 ml-4 relative'}>
-                        <div className={' rounded-3xl border border-zinc-500'}>
-                            <div id={'portrait-mobile'} className={'group shadow-2xl rounded-3xl border border-zinc-500 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
+                        <div className={' rounded-3xl border border-zinc-400 dark:border-zinc-600'}>
+                            <div id={'portrait-mobile'} className={'group shadow-2xl rounded-3xl border border-zinc-400 dark:border-zinc-600 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
                                 <div className={'absolute left-0 z-50 inset-0 flex grid items-center text-4xl text-white font-asap font-bold w-1/2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-300 p-4'}>
                                     REYMOND PAMELAR
                                     <div className={'text-xl'}>
@@ -85,8 +85,8 @@ export default function About() {
                             </FadeSlide>
                             <div className={'hidden h-full md:flex justify-center items-end relative'}>
                                 <div className={''}>
-                                    <div className={' rounded-3xl border border-zinc-400'}>
-                                        <div id={'portrait-desktop'} className={'group relative shadow-xl rounded-3xl border border-zinc-400 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
+                                    <div className={' rounded-3xl border border-zinc-400 dark:border-zinc-600'}>
+                                        <div id={'portrait-desktop'} className={'group relative shadow-xl rounded-3xl border border-zinc-400 dark:border-zinc-600 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
                                             <div className={'absolute text-white left-0 z-50 inset-0 flex grid items-center text-4xl font font-asap font-bold w-1/2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-300 p-4'}>
                                                 REYMOND PAMELAR
                                                 <div className={'text-xl'}>

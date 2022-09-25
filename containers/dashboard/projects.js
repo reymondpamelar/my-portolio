@@ -19,15 +19,15 @@ export default function Projects() {
                     scroll
                     <Icon.ChevronRight/>
                 </div>
-                <div ref={scrollRef} className={' overflow-scroll'}>
+                <div ref={scrollRef} className={'flex overflow-scroll pl-10 relative'}>
                     <FadeSlide className={'flex p-20 md:p-32 gap-24 md:gap-32'}>
                         <div>
                             <ProjectTemplate
                                 number={'01'}
                                 title={'Portfolio'}
                                 techUsed={'Next.js | TailwindCSS'}
-                                github={''}
-                                link={''}
+                                github={'https://github.com/reymondpamelar/my-portolio'}
+                                link={'https://reymond.dev/'}
                                 imageSrc={'portfolio.png'}
                                 titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}
                             />
@@ -37,8 +37,8 @@ export default function Projects() {
                                 number={'02'}
                                 title={'LINE UP!'}
                                 techUsed={'React.js | TailwindCSS | Electron.js | Node.js | Express.js'}
-                                github={''}
-                                link={''}
+                                github={'https://github.com/reymondpamelar/LineUP'}
+                                link={'line-up-scheduler.netlify.app'}
                                 imageSrc={'line-up.png'}
                                 titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#ECB984] via-[#D58258] to-[#963A2F] background-animate'}
                             />
@@ -48,8 +48,7 @@ export default function Projects() {
                                 number={'03'}
                                 title={'Privatyze '}
                                 techUsed={'Next.js | Redux | TailwindCSS'}
-                                github={''}
-                                link={''}
+                                link={'https://app.privatyze.io/login'}
                                 imageSrc={'Privatyze.png'}
                                 titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-pblue to-pgreen background-animate'}
                             />
