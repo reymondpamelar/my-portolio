@@ -38,7 +38,7 @@ export default function Projects() {
                                 title={'LINE UP!'}
                                 techUsed={'React.js | TailwindCSS | Electron.js | Node.js | Express.js'}
                                 github={'https://github.com/reymondpamelar/LineUP'}
-                                link={'line-up-scheduler.netlify.app'}
+                                link={'https://line-up-one.vercel.app/'}
                                 imageSrc={'line-up.png'}
                                 titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#ECB984] via-[#D58258] to-[#963A2F] background-animate'}
                             />
