@@ -40,6 +40,7 @@ export default function Projects() {
                                 github={'https://github.com/reymondpamelar/LineUP'}
                                 link={'https://line-up-one.vercel.app/'}
                                 imageSrc={'line-up.png'}
+                                bgColor={'bg-[#D58258]'}
                                 titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#ECB984] via-[#D58258] to-[#963A2F] background-animate'}
                             />
                         </div>
