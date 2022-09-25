@@ -24,7 +24,7 @@ export default function Home(props) {
     return (
         <div content={''}>
             <div className={'fixed h-screen w-screen flex items-center grid z-50'}>
-                <div className={'relative pl-10 md:pl-20'}>
+                <div className={'relative pl-10 md:pl-20 z-50'}>
                     <FadeSlide>
                         <div className={'pb-10'}>
                             <div className={'flex gap-10 font-asap'}>
