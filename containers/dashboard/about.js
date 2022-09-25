@@ -51,7 +51,7 @@ export default function About() {
                     </div>
                     <FadeSlide>
                         <div key={'quote1'} className={' grid md:grid-cols-2 md:px-10'}>
-                            <FadeSlide className={'space-y-6 p-4 xl:text-2xl pr-20'}>
+                            <FadeSlide className={'space-y-6 p-4 xl:text-2xl md:pr-20'}>
                                 <h3>
                                     Nice to meet you! 👋🏽
                                 </h3>
