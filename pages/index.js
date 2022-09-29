@@ -54,15 +54,13 @@ export default function Start() {
             <div id={'navbar'} className={'z-50 hidden'}>
                 <Navbar step={step} setStep={setStep}/>
             </div>
-            <FadeSlide>
+            <FadeSlide className={'snap-both snap-proximity'}>
                 {pages.map((page) => {
-                    if(step === page.index){
-                        return (
-                            <div key={page.title} >
-                                {page.content}
-                            </div>
-                        )
-                    }
+                    return (
+                        <div id={page.title} key={page.title} className={'snap-start'}>
+                            {page.content}
+                        </div>
+                    )
                 })}
             </FadeSlide>
         </DashboardLayout>

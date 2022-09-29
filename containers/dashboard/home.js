@@ -4,8 +4,8 @@ import Particles from "react-tsparticles";
 import { loadTrianglesPreset } from "tsparticles-preset-triangles";
 import { motion } from "framer-motion"
 import * as Icon from 'react-feather'
-import FadeSlide from "../../components/flip-move/fadeSlide";
 import BorderSlideButton from "../../components/general-ui/buttons/border-slide-button";
+import AccordionVertical from "../../components/flip-move/AccordionVertical";
 
 export default function Home(props) {
     const particlesInit = (main) => {
@@ -24,9 +24,9 @@ export default function Home(props) {
     return (
         <div content={''}>
             <div className={'fixed h-screen w-screen flex items-center grid z-50'}>
-                <div className={'relative pl-10 md:pl-20 z-50'}>
-                    <FadeSlide>
-                        <div className={'pb-10'}>
+                <div className={'relative z-50'}>
+                    <AccordionVertical delay={3000} className={'text-center'} >
+                        <div className={'pb-10 flex justify-center'}>
                             <div className={'flex gap-10 font-asap'}>
                                 <BorderSlideButton onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')}>
                                     <div className={'flex items-center gap-2'}>
@@ -55,7 +55,7 @@ export default function Home(props) {
                                 VIEW PROJECTS
                             </BorderSlideButton>
                         </div>
-                    </FadeSlide>
+                    </AccordionVertical>
                 </div>
             </div>
             <div className={'flex relative h-screen fixed top-0'}>
@@ -192,7 +192,7 @@ export default function Home(props) {
                             }}}
                     />
                 </motion.div>
-                <div className={'absolute hidden dark:block w-full h-full bg-gradient-to-b from-transparent via-transparent to-zinc-800'}>
+                <div className={'absolute w-full h-full bg-gradient-to-t from-transparent via-transparent to-mainWhite dark:to-zinc-800 transition ease-in-out duration-500'}>
 
                 </div>
             </div>

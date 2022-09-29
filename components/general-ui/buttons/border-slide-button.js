@@ -5,10 +5,11 @@ export default function BorderSlideButton(props){
 
 
     return(
-        <button onClick={props.onClick} className={'cursor-pointer font-asap tracking-widest text-lg group overflow-hidden'}>
+        <button onClick={props.onClick} className={'cursor-pointer relative font-asap tracking-widest text-lg group overflow-hidden'}>
             {props.children}
-            <div className={'border-b border-zinc-700 dark:border-white w-full p-1 -translate-x-1/2 transition ease-in-out duration-300 group-hover:translate-x-0'}>
-
+            <div className={'pt-2'}>
+                <span className="absolute -bottom-1 left-1/2 w-3 h-[0.3rem] bg-zinc-700 dark:bg-white group-hover:w-1/2 group-hover:transition-all ease-in-out duration-300"></span>
+                <span className="absolute -bottom-1 right-1/2 w-3 h-[0.3rem] bg-zinc-700 dark:bg-white group-hover:w-1/2 group-hover:transition-all ease-in-out duration-300"></span>
             </div>
         </button>
     )

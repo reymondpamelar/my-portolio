@@ -17,6 +17,6 @@ export function useHorizontalScroll() {
             el.addEventListener("wheel", onWheel);
             return () => el.removeEventListener("wheel", onWheel);
         }
-    }, []);
+    });
     return elRef;
 }
