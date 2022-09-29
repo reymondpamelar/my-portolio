@@ -66,7 +66,7 @@ export default function Home(props) {
                     transition={{ duration: 3 }}
                 >
                     <Particles
-                        className={' h-full w-full top-0'}
+                        className={'hidden md:flex h-full w-full top-0'}
                         init={particlesInit}
                         loaded={particlesLoaded}
                         options={{
