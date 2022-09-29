@@ -70,7 +70,7 @@ export default function Home(props) {
                         init={particlesInit}
                         loaded={particlesLoaded}
                         options={{
-                            fullScreen: { enable: true },
+                            fullScreen: { enable: false },
                             fpsLimit: 60,
                             particles: {
                                 number: {
