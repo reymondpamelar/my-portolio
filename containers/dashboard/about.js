@@ -12,7 +12,7 @@ import useOnScreen from "../../components/useOnScreen";
 export default function About() {
 
     useEffect(() => {
-        if(isVisible){
+        if(isVisible || isVisible2){
             setTimeout(()=>{
                 if(document.getElementById('portrait-desktop') != null){
                     document.getElementById('portrait-desktop').classList.add('opacity-100')
@@ -38,9 +38,12 @@ export default function About() {
     const ref = useRef()
     const isVisible = useOnScreen(ref)
 
+    const ref2 = useRef()
+    const isVisible2 = useOnScreen(ref2)
+
     return (
         <div className={'pt-24 flex justify-center'}>
-            <div className={'mx-20 w-[80rem] '}>
+            <div className={' mx-10 md:mx-20 w-[80rem]'}>
                 <FadeSlide delay={100}>
                     <h1 className={'text-5xl md:text-8xl w-full'}>
                         / About
@@ -48,7 +51,7 @@ export default function About() {
                 </FadeSlide>
                 <div className={'relative bottom-20'}>
                     <div className={' md:mt-32 pb-10 grid justify-center'}>
-                        <div className={'lg:hidden h-full flex justify-center relative p-8 ml-4 pt-32 relative'}>
+                        <div ref={ref2} className={'lg:hidden h-full flex justify-center relative p-8 ml-4 pt-32 relative'}>
                             <div className={' rounded-3xl border border-zinc-400 dark:border-zinc-600'}>
                                 <div id={'portrait-mobile'} className={'group shadow-2xl rounded-3xl border border-zinc-400 dark:border-zinc-600 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
                                     <div className={'absolute left-0 z-50 inset-0 flex grid items-center text-4xl text-white font-asap font-bold w-1/2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-300 p-4'}>
@@ -64,7 +67,10 @@ export default function About() {
                         <div>
                             <div key={'quote1'} className={'xl:text-lg grid lg:grid-cols-2 md:px-10'}>
                                 <div className={'w-full'}>
-                                    <FadeSlide className={'space-y-6 p-4 md:pr-20'}>
+                                    <FadeSlide className={'space-y-6 md:pr-20'}>
+                                        <div>
+                                            Nice to meet you! 👋🏽
+                                        </div>
                                         <div>
                                             I am <span className={'font-bold'}>Reymond Pamelar</span>
                                         </div>

@@ -13,14 +13,14 @@ export default function ProjectTemplate(props) {
         },750)
     },[])
     return (
-        <div key={props.title} className={' rounded-3xl w-full border border-zinc-400 dark:border-zinc-600 h-[20rem] md:h-[25rem] w-[20rem] md:min-w-[30rem]'}>
+        <div key={props.title} className={' rounded-3xl w-full border border-zinc-400 dark:border-zinc-600 h-[20rem] md:h-[25rem] w-[15rem] md:min-w-[30rem]'}>
             <div id={props.title} className={'group relative shadow-xl bg-white dark:text-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-3xl w-full h-full border border-zinc-400 dark:border-zinc-600 transition ease-in-out duration-500'}>
                 <div className={'relative h-full z-50 p-6 md:p-10 space-y-4 rounded-t-3xl font-asap uppercase tracking-widest'}>
                     <div className={'text-7xl font-galano absolute -left-8 -top-8'}>
                         {props.number}
                     </div>
                     <h2 className={props.titleClassName}>{props.title}</h2>
-                    <div className={''}>
+                    <div className={'text-md'}>
                         {props.techUsed}
                     </div>
                     <div className={'flex gap-6 md:gap-10 absolute right-6 bottom-6 md:right-10 md:bottom-10'}>

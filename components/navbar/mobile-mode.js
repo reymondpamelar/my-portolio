@@ -37,7 +37,7 @@ export default function MobileNavbar(props) {
                 <div className={'z-50 flex items-center gap-12 rounded-b-2xl p-5 px-12'}>
                     <h4>RP</h4>
                     <div className={'grow flex justify-end'}>
-                        <FadeSlide useOnScreen={false}>
+                        <FadeSlide delay={1} useOnScreen={false}>
                             {
                                 showMenu ?
                                     <Icon.X key={'X'} onClick={() => setShowMenu(!showMenu)}/>
@@ -49,11 +49,11 @@ export default function MobileNavbar(props) {
                     </div>
                 </div>
                 <div className={'fixed top-0 -z-10'}>
-                    <FadeSlide useOnScreen={false}>
+                    <FadeSlide delay={1} useOnScreen={false}>
                         {
                             showMenu ?
                                 <div>
-                                    <FadeSlide useOnScreen={false} className={' h-screen w-screen dark:bg-zinc-800 bg-mainWhite flex flex-col items-center justify-center space-y-10 transition ease-in-out duration-300'}>
+                                    <FadeSlide delay={1} useOnScreen={false} className={' h-screen w-screen dark:bg-zinc-800 bg-mainWhite flex flex-col items-center justify-center space-y-10 transition ease-in-out duration-300'}>
                                         <div onClick={()=>changePage(0)} className={' cursor-pointer p-2 overflow-hidden relative'}>
                                             <h2 className={'flex items-center font-asap tracking-widest'}>
                                                 / HOME

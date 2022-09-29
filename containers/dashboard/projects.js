@@ -10,9 +10,9 @@ import useOnScreen from "../../components/useOnScreen";
 export default function Projects() {
     const scrollRef = useHorizontalScroll()
     return (
-        <div className={'pt-24'}>
+        <div className={'pt-24 pb-24'}>
             <FadeSlide delay={100} className={'flex justify-center'}>
-                <h1 className={'text-5xl md:text-8xl w-[80rem] mx-20 pb-20 text-left'}>
+                <h1 className={'text-5xl md:text-8xl w-[80rem] mx-10 md:mx-20 pb-20 text-left'}>
                     / Projects
                 </h1>
             </FadeSlide>
