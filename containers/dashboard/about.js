@@ -67,7 +67,7 @@ export default function About() {
                         <div>
                             <div key={'quote1'} className={'xl:text-lg grid lg:grid-cols-2 md:px-10'}>
                                 <div className={'w-full'}>
-                                    <FadeSlide className={'space-y-6 md:pr-20'}>
+                                    <FadeSlide className={'space-y-6 md:pr-20 md:text-lg'}>
                                         <div>
                                             Nice to meet you! 👋🏽
                                         </div>
@@ -85,18 +85,6 @@ export default function About() {
                                         </div>
                                         <div>
                                             However, I do like to explore outside the boundaries of a browser.
-                                        </div>
-                                        <div className={'flex gap-10 font-asap'}>
-                                            <BorderSlideButton onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')}>
-                                                <div className={'flex items-center gap-2'}>
-                                                    <Icon.GitHub className={'w-4'}/> GITHUB
-                                                </div>
-                                            </BorderSlideButton>
-                                            <BorderSlideButton onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')}>
-                                                <div className={'flex items-center gap-2'}>
-                                                    <Icon.Linkedin className={'w-4'}/> LINKEDIN
-                                                </div>
-                                            </BorderSlideButton>
                                         </div>
                                     </FadeSlide>
                                 </div>
