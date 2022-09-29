@@ -24,7 +24,7 @@ export default function Home(props) {
     return (
         <div content={''}>
             <div className={'fixed h-screen w-screen flex items-center grid z-50'}>
-                <div className={'relative z-50'}>
+                <div className={'relative z-50 px-10'}>
                     <AccordionVertical delay={3000} className={'text-center'} >
                         <div className={'pb-10 flex justify-center'}>
                             <div className={'flex gap-10 font-asap'}>
@@ -66,7 +66,7 @@ export default function Home(props) {
                     transition={{ duration: 3 }}
                 >
                     <Particles
-                        className={'absolute h-full w-full top-0'}
+                        className={' h-full w-full top-0'}
                         init={particlesInit}
                         loaded={particlesLoaded}
                         options={{
