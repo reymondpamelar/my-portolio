@@ -89,6 +89,8 @@ module.exports = {
                 'custombp': {'raw': '(max-height: 720px)'},
             },
             animation: {
+                loaderRotate: 'loaderRotate 3s ease-in-out infinite',
+                loaderSlide: 'loaderSlide 3s ease-in-out infinite',
                 bounceRight: 'bounceRight 2s ease-in-out infinite',
                 reversePing: 'reversePing 1s',
                 slideUp: 'slideUp 1s',
@@ -99,6 +101,32 @@ module.exports = {
                 rotate180: 'rotate180 ',
             },
             keyframes:{
+                loaderRotate: {
+                    '0%': {
+                        transform: 'rotate(0deg)'
+                    },
+                    '25%': {
+                        transform: 'rotate(0deg)'
+                    },
+                    '50%': {
+                        transform: 'rotate(360deg)'
+                    },
+                    '100%': {
+                        transform: 'rotate(360deg)'
+                    },
+
+                },
+                loaderSlide: {
+                    '25%': {
+                        transform: 'translateX(-30px) translateY(-30px)',
+                    },
+                    '50%': {
+                        transform: 'translateX(-30px) translateY(-30px)',
+                    },
+                    '75%': {
+                        transform: 'translateX(-30px) translateY(-30px)',
+                    },
+                },
                 bounceRight: {
                     '0%, 100%': {
                         transform: 'translateX(-6%)',

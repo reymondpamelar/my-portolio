@@ -9,11 +9,21 @@ import {motion} from "framer-motion";
 import Particles from "react-tsparticles";
 import {loadTrianglesPreset} from "tsparticles-preset-triangles";
 import Head from "next/head";
+import Loader from "../components/loader";
 
 export default function Start() {
+    useEffect(() => {
+        setTimeout(()=> {
+            document.getElementById('loader').classList.remove('opacity-100')
+            document.getElementById('loader').classList.add('opacity-0')
+            document.getElementById('navbar').classList.remove('hidden')
+            setTimeout(()=> {
+                document.getElementById('loader').classList.add('hidden')
+            },300)
+        },3000)
+    }, [])
 
     const [step, setStep] = useState(0)
-
     useEffect(() => {
         document.getElementById('main').scrollTo(0, 0)
     }, [step])
@@ -35,7 +45,13 @@ export default function Start() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className={'z-50'}>
+            <div id={'loader'} className={'transition ease-in-out duration-300 opacity-100 h-screen w-screen flex justify-center items-center bg-mainWhite dark:bg-zinc-800 z-50 fixed '}>
+                <div className={'relative '}>
+                    <Loader/>
+                </div>
+            </div>
+
+            <div id={'navbar'} className={'z-50 hidden'}>
                 <Navbar step={step} setStep={setStep}/>
             </div>
             <FadeSlide>
