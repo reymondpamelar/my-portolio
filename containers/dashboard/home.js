@@ -38,7 +38,7 @@ export default function Home(props) {
                 <div className={'relative z-50 px-6 md:px-10 max-w-[80rem]'}>
                     <AccordionVertical delay={3000} className={'text-center'} >
                         <div className={'md:hidden pb-10 flex justify-center'}>
-                            <div className={'flex gap-10 font-asap text-zinc-300 dark:text-gray-400'}>
+                            <div className={'flex gap-10 font-asap md:text-zinc-300 dark:text-gray-400'}>
                                 <MiddleSlideButton onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')}>
                                     <div className={'flex items-center gap-2'}>
                                         <Icon.GitHub className={'w-4'}/> GITHUB
@@ -56,15 +56,17 @@ export default function Home(props) {
                                 <span className={'text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}> Reymond Pamelar</span>
                             </div>
                         </h1>
-                        <h1 className={'text-2xl md:text-3xl text-zinc-300'}>
-                            <div className={' mix-blend-difference'}>
-                                Front-end Developer
+                        <div className={'relative top-20 md:top-0'}>
+                            <h1 className={'text-2xl md:text-3xl md:text-zinc-300'}>
+                                <div className={' mix-blend-difference'}>
+                                    Front-end Developer
+                                </div>
+                            </h1>
+                            <div className={'mt-10 md:text-zinc-300 dark:text-gray-400'}>
+                                <MiddleSlideButton onClick={() => props.setStep(2)}>
+                                    VIEW PROJECTS
+                                </MiddleSlideButton>
                             </div>
-                        </h1>
-                        <div className={'mt-10 text-zinc-300 dark:text-gray-400'}>
-                            <MiddleSlideButton onClick={() => props.setStep(2)}>
-                                VIEW PROJECTS
-                            </MiddleSlideButton>
                         </div>
                     </AccordionVertical>
                 </div>
