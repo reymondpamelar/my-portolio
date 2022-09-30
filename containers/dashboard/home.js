@@ -6,6 +6,8 @@ import { motion } from "framer-motion"
 import * as Icon from 'react-feather'
 import BorderSlideButton from "../../components/general-ui/buttons/border-slide-button";
 import AccordionVertical from "../../components/flip-move/AccordionVertical";
+import TriangularPrism from "../../components/threeJS/triangular-prism";
+import MiddleSlideButton from "../../components/general-ui/buttons/middle-slide-button";
 
 export default function Home(props) {
     const particlesInit = (main) => {
@@ -23,37 +25,39 @@ export default function Home(props) {
 
     return (
         <div content={''}>
+
             <div className={'fixed h-screen w-screen flex items-center grid z-50'}>
+                <TriangularPrism/>
                 <div className={'relative z-50 px-10'}>
                     <AccordionVertical delay={3000} className={'text-center'} >
-                        <div className={'pb-10 flex justify-center'}>
-                            <div className={'flex gap-10 font-asap'}>
-                                <BorderSlideButton onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')}>
+                        <div className={'md:hidden pb-10 flex justify-center'}>
+                            <div className={'flex gap-10 font-asap text-zinc-300 dark:text-gray-400'}>
+                                <MiddleSlideButton onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')}>
                                     <div className={'flex items-center gap-2'}>
                                         <Icon.GitHub className={'w-4'}/> GITHUB
                                     </div>
-                                </BorderSlideButton>
-                                <BorderSlideButton onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')}>
+                                </MiddleSlideButton>
+                                <MiddleSlideButton onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')}>
                                     <div className={'flex items-center gap-2'}>
                                         <Icon.Linkedin className={'w-4'}/> LINKEDIN
                                     </div>
-                                </BorderSlideButton>
+                                </MiddleSlideButton>
                             </div>
                         </div>
-                        <h1 className={'text-3xl md:text-7xl'}>
+                        <h1 className={'text-3xl md:text-7xl uppercase tracking-widest'}>
                             <div className={''}>
                                 <span className={'text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}> Reymond Pamelar</span>
                             </div>
                         </h1>
-                        <h1 className={'text-3xl md:text-7xl'}>
-                            <div className={' '}>
-                                Front-end Web Developer
+                        <h1 className={'text-3xl text-zinc-300'}>
+                            <div className={' mix-blend-difference'}>
+                                Front-end Developer
                             </div>
                         </h1>
-                        <div className={'mt-10'}>
-                            <BorderSlideButton onClick={() => props.setStep(2)}>
+                        <div className={'mt-10 text-zinc-300 dark:text-gray-400'}>
+                            <MiddleSlideButton onClick={() => props.setStep(2)}>
                                 VIEW PROJECTS
-                            </BorderSlideButton>
+                            </MiddleSlideButton>
                         </div>
                     </AccordionVertical>
                 </div>

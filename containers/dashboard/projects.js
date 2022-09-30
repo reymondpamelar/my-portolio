@@ -59,11 +59,11 @@ export default function Projects() {
                             </div>
                             <div>
                                 <ProjectTemplate
-                                    number={'03'}
-                                    title={'Game'}
-                                    techUsed={'Next.js | Redux | TailwindCSS'}
+                                    number={'04'}
+                                    title={'Test'}
+                                    techUsed={'Next.js'}
                                     link={'https://app.privatyze.io/login'}
-                                    imageSrc={'Privatyze.png'}
+                                    imageSrc={''}
                                     titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-pblue to-pgreen background-animate'}
                                 />
                             </div>

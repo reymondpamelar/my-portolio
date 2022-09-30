@@ -7,7 +7,7 @@ export default function DashboardLayout({children}) {
 
             <div className="flex relative h-full">
                 <div className={`w-full`}>
-                    <div id={'body'} className="w-full text-zinc-500 dark:text-gray-400 transition ease-in-out duration-300">
+                    <div id={'body'} className="w-full text-zinc-500 dark:text-zinc-300 transition ease-in-out duration-300">
                     {children}
                     </div>
                 </div>
