@@ -69,7 +69,7 @@ export default function Projects() {
                     </div>
                     <div className={'-z-20 flex items-center text-lg absolute -bottom-20 -right-10 font-asap tracking-widest uppercase animate__animated animate'}>
                         <div className={' dark:invert rotate-90'}>
-                            <div className={'w-[20rem] rotate-180'}>
+                            <div className={'w-[16rem] md:w-[20rem] rotate-180'}>
                                 <Lottie
                                     options={defaultOptions}
                                 />
