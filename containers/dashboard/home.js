@@ -8,6 +8,8 @@ import BorderSlideButton from "../../components/general-ui/buttons/border-slide-
 import AccordionVertical from "../../components/flip-move/AccordionVertical";
 import TriangularPrism from "../../components/threeJS/triangular-prism";
 import MiddleSlideButton from "../../components/general-ui/buttons/middle-slide-button";
+import animationData from "/public/40587-scroll.json";
+import Lottie from "react-lottie";
 
 export default function Home(props) {
     const particlesInit = (main) => {
@@ -18,17 +20,22 @@ export default function Home(props) {
 
     };
 
-    const variants = {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1 },
-    }
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice",
+        }
+    };
 
     return (
         <div content={''}>
 
-            <div className={'fixed h-screen w-screen flex items-center grid z-50'}>
+            <div className={'fixed h-screen w-screen flex justify-center items-center grid z-50'}>
                 <TriangularPrism/>
-                <div className={'relative z-50 px-6 md:px-10'}>
+                <div className={'relative z-50 px-6 md:px-10 max-w-[80rem]'}>
                     <AccordionVertical delay={3000} className={'text-center'} >
                         <div className={'md:hidden pb-10 flex justify-center'}>
                             <div className={'flex gap-10 font-asap text-zinc-300 dark:text-gray-400'}>
@@ -60,6 +67,15 @@ export default function Home(props) {
                             </MiddleSlideButton>
                         </div>
                     </AccordionVertical>
+                </div>
+                <div className={' w-screen h-screen fixed'}>
+                    <div className={'flex justify-start absolute left-0 bottom-0 invert w-[80rem]'}>
+                        <div className={'w-[18rem] md:w-[20rem] relative top-12 -left-[7rem] md:-left-[4rem]'}>
+                            <Lottie
+                                options={defaultOptions}
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className={'flex relative h-screen fixed top-0'}>
