@@ -91,6 +91,7 @@ module.exports = {
             animation: {
                 loaderRotate: 'loaderRotate 3s ease-in-out infinite',
                 loaderSlide: 'loaderSlide 3s ease-in-out infinite',
+                loaderInitialAppear: 'loaderInitialAppear 3s infinite',
                 bounceRight: 'bounceRight 2s ease-in-out infinite',
                 reversePing: 'reversePing 1s',
                 slideUp: 'slideUp 1s',
@@ -125,6 +126,20 @@ module.exports = {
                     },
                     '75%': {
                         transform: 'translateX(-30px) translateY(-30px)',
+                    },
+                    '90%': {
+                        transform: 'translateX(0px) translateY(0px)',
+                    },
+                },
+                loaderInitialAppear: {
+                    '25%': {
+                        opacity: '0',
+                    },
+                    '85%': {
+                        opacity: '0',
+                    },
+                    '90%': {
+                        opacity: '1',
                     },
                 },
                 bounceRight: {

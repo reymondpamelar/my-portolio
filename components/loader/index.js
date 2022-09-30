@@ -1,3 +1,5 @@
+import {useEffect, useState} from "react";
+
 export default function Loader(){
     return (
         <div className={'animate-loaderRotate relative'}>
@@ -21,6 +23,9 @@ export default function Loader(){
 
                 </div>
             </div>
+            <h5 className={'absolute text-sm inset-0 flex items-center justify-center animate-loaderInitialAppear'}>
+                RP
+            </h5>
         </div>
     )
 }
