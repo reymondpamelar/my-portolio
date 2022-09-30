@@ -37,6 +37,7 @@
     "sweetalert2": "^11.4.33",
     "sweetalert2-react-content": "^5.0.3",
     "tailwindcss-neumorphism": "^0.1.0",
+    "three": "^0.145.0",
     "tsparticles-engine": "^2.0.6",
     "tsparticles-preset-links": "^2.3.2",
     "tsparticles-preset-triangles": "^2.0.6"
