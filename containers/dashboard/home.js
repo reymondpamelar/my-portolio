@@ -28,7 +28,7 @@ export default function Home(props) {
 
             <div className={'fixed h-screen w-screen flex items-center grid z-50'}>
                 <TriangularPrism/>
-                <div className={'relative z-50 px-10'}>
+                <div className={'relative z-50 px-6 md:px-10'}>
                     <AccordionVertical delay={3000} className={'text-center'} >
                         <div className={'md:hidden pb-10 flex justify-center'}>
                             <div className={'flex gap-10 font-asap text-zinc-300 dark:text-gray-400'}>
@@ -44,12 +44,12 @@ export default function Home(props) {
                                 </MiddleSlideButton>
                             </div>
                         </div>
-                        <h1 className={'text-3xl md:text-7xl uppercase tracking-widest'}>
+                        <h1 className={'text-3xl md:text-7xl uppercase md:tracking-widest'}>
                             <div className={''}>
                                 <span className={'text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}> Reymond Pamelar</span>
                             </div>
                         </h1>
-                        <h1 className={'text-3xl text-zinc-300'}>
+                        <h1 className={'text-2xl md:text-3xl text-zinc-300'}>
                             <div className={' mix-blend-difference'}>
                                 Front-end Developer
                             </div>

@@ -57,7 +57,7 @@ export default function DesktopNavbar(props) {
             <div className={'grid grid-cols-9 relative w-full'}>
                 <h4 className={'p-5 pl-12 col-span-2'}>RP</h4>
                 <div className={'col-span-5'}>
-                    <AccordionVertical delay={3000} useOnScreen={false} className={'z-50 flex justify-center items-center gap-12 w-full p-5 px-12 relative'}>
+                    <AccordionVertical useOnScreen={false} className={'z-50 flex justify-center items-center gap-12 w-full p-5 px-12 relative'}>
                         <div onClick={()=> scrollTo('Home')} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
                             <div>
                                 / HOME
