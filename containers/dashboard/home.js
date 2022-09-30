@@ -68,9 +68,9 @@ export default function Home(props) {
                         </div>
                     </AccordionVertical>
                 </div>
-                <div className={' w-screen h-screen fixed'}>
-                    <div className={'flex justify-start absolute left-0 bottom-0 invert w-[80rem]'}>
-                        <div className={'w-[18rem] md:w-[20rem] relative top-12 -left-[7rem] md:-left-[4rem]'}>
+                <div className={' w-screen h-screen fixed flex justify-center items-end'}>
+                    <div className={' invert w-[80rem]'}>
+                        <div className={'w-[18rem] md:w-[20rem] relative top-12 -left-[7rem] md:-left-[8rem]'}>
                             <Lottie
                                 options={defaultOptions}
                             />
