@@ -1,13 +1,16 @@
 import DesktopNavbar from "./desktop-mode";
 import MobileNavbar from "./mobile-mode";
+import {useState} from "react";
 export default function Navbar(props) {
+
+    let [currUnderline, setCurrUnderline] = useState('Home')
     return (
         <div className={''}>
             <div className={'hidden md:block'}>
-                <DesktopNavbar step={props.step} setStep={props.setStep}/>
+                <DesktopNavbar currUnderline={currUnderline} setCurrUnderline={setCurrUnderline}/>
             </div>
             <div className={' md:hidden'}>
-                <MobileNavbar step={props.step} setStep={props.setStep}/>
+                <MobileNavbar currUnderline={currUnderline} setCurrUnderline={setCurrUnderline}/>
             </div>
         </div>
     )

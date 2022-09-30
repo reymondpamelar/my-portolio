@@ -25,7 +25,6 @@ export default function DesktopNavbar(props) {
         document.getElementById(element).scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
     }
 
-    let [currUnderline, setCurrUnderline] = useState('Home')
     useEffect(()=>{
         function underlineElement(){
             var currPos = 0
@@ -38,13 +37,13 @@ export default function DesktopNavbar(props) {
             });
             switch(positions.indexOf(closest)){
                 case 0:
-                    setCurrUnderline('Home')
+                    props.setCurrUnderline('Home')
                     break;
                 case 1:
-                    setCurrUnderline('About')
+                    props.setCurrUnderline('About')
                     break;
                 case 2:
-                    setCurrUnderline('Projects')
+                    props.setCurrUnderline('Projects')
                     break;
             }
         }
@@ -63,19 +62,19 @@ export default function DesktopNavbar(props) {
                             <div>
                                 / HOME
                             </div>
-                            <div className={currUnderline !== 'Home' ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
+                            <div className={props.currUnderline !== 'Home' ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
                         </div>
                         <div onClick={()=> scrollTo('About')} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
                             <div>
                                 / ABOUT
                             </div>
-                            <div className={currUnderline !== 'About' ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
+                            <div className={props.currUnderline !== 'About' ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
                         </div>
                         <div onClick={()=> scrollTo('Projects')} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
                             <div>
                                 / PROJECTS
                             </div>
-                            <div className={currUnderline !== 'Projects' ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
+                            <div className={props.currUnderline !== 'Projects' ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
                         </div>
                     </AccordionVertical>
                 </div>

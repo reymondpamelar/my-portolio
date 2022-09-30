@@ -23,12 +23,8 @@ export default function Start() {
         },3000)
     }, [])
 
-    const [step, setStep] = useState(0)
-    useEffect(() => {
-        document.getElementById('main').scrollTo(0, 0)
-    }, [step])
     const pages = [
-        {index:0, title:'Home', content:<Home setStep={setStep}/>},
+        {index:0, title:'Home', content:<Home/>},
         {index:1, title:'About', content:<About/>},
         {index:2, title:'Projects', content:<Projects/>},
     ]
@@ -52,7 +48,7 @@ export default function Start() {
             </div>
 
             <div id={'navbar'} className={'z-50 hidden'}>
-                <Navbar step={step} setStep={setStep}/>
+                <Navbar/>
             </div>
             <FadeSlide className={'snap-both snap-proximity'}>
                 {pages.map((page) => {
