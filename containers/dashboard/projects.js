@@ -17,7 +17,7 @@ export default function Projects() {
                 </h1>
             </FadeSlide>
             <div className={'relative'}>
-                <div className={'relative flex justify-end'}>
+                <div className={'relative flex justify-center'}>
                     <div className={'flex items-center text-lg absolute -top-10 right-6 font-asap tracking-widest uppercase animate-bounceRight'}>
                         scroll
                         <Icon.ChevronRight/>

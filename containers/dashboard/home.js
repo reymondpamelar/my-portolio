@@ -66,11 +66,11 @@ export default function Home(props) {
                     transition={{ duration: 3 }}
                 >
                     <Particles
-                        className={'hidden md:flex h-full w-full top-0'}
+                        className={'hidden md:block h-full w-full top-0'}
                         init={particlesInit}
                         loaded={particlesLoaded}
                         options={{
-                            fullScreen: { enable: false },
+                            fullScreen: { enable: true },
                             fpsLimit: 60,
                             particles: {
                                 number: {
