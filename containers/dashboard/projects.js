@@ -1,11 +1,8 @@
 import React from "react";
 import 'animate.css';
-import * as Icon from 'react-feather'
 import ProjectTemplate from "../../components/project-template";
 import FadeSlide from "../../components/flip-move/fadeSlide";
 import {useHorizontalScroll} from "../../components/general-ui/scroll/horizontal-scroll";
-import {useRef} from "react";
-import useOnScreen from "../../components/useOnScreen";
 import Lottie from "react-lottie";
 import animationData from "../../public/40587-scroll.json";
 
@@ -22,9 +19,9 @@ export default function Projects() {
     };
 
     return (
-        <div className={'pt-24 pb-24'}>
+        <div className={'pt-24 pb-24 h-[45rem] md:min-h-[60rem]'}>
             <FadeSlide delay={100} className={'flex justify-center'}>
-                <h1 className={'text-5xl md:text-8xl w-[80rem] mx-10 md:mx-20 pb-20 text-left'}>
+                <h1 className={'text-5xl md:text-8xl w-[80rem] mx-10 md:mx-20 pb-10 text-left'}>
                     / Projects
                 </h1>
             </FadeSlide>

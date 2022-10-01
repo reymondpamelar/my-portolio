@@ -33,16 +33,16 @@ export default function About() {
     const isVisible2 = useOnScreen(ref2)
 
     return (
-        <div className={'pt-24 flex justify-center'}>
+        <div className={'pt-24 flex justify-center h-full'}>
             <div className={' mx-10 md:mx-20 w-[80rem]'}>
                 <FadeSlide delay={100}>
                     <h1 className={'text-5xl md:text-8xl w-full'}>
                         / About
                     </h1>
                 </FadeSlide>
-                <div className={'relative bottom-20'}>
-                    <div className={' md:mt-32 pb-10 grid justify-center'}>
-                        <div ref={ref2} className={'lg:hidden h-full flex justify-center relative p-8 ml-4 pt-32 relative'}>
+                <div className={'relative'}>
+                    <div className={' md:mt-32 grid justify-center'}>
+                        <div ref={ref2} className={'lg:hidden h-full flex justify-center relative p-8 ml-4 pt-24 relative'}>
                             <div className={' rounded-3xl border border-zinc-400 dark:border-zinc-600'}>
                                 <div id={'portrait-mobile'} className={'group shadow-2xl rounded-3xl border border-zinc-400 dark:border-zinc-600 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
                                     <div className={'absolute left-0 z-50 inset-0 flex grid items-center text-4xl text-white font-asap font-bold w-1/2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-300 p-4'}>
