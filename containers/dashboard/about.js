@@ -26,15 +26,6 @@ export default function About() {
         }
     })
 
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-        rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice"
-        }
-    };
-
     const ref = useRef()
     const isVisible = useOnScreen(ref)
 

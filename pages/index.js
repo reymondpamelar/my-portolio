@@ -10,6 +10,7 @@ import Particles from "react-tsparticles";
 import {loadTrianglesPreset} from "tsparticles-preset-triangles";
 import Head from "next/head";
 import Loader from "../components/loader";
+import Contact from "../containers/dashboard/contact";
 
 export default function Start() {
     useEffect(() => {
@@ -27,6 +28,7 @@ export default function Start() {
         {index:0, title:'Home', content:<Home/>},
         {index:1, title:'About', content:<About/>},
         {index:2, title:'Projects', content:<Projects/>},
+        {index:3, title:'Contact', content:<Contact/>},
     ]
 
     const variants = {

@@ -31,7 +31,7 @@ function Box(props) {
             onPointerOver={(event) => hover(true)}
             onPointerOut={(event) => hover(false)}>
             <octahedronGeometry />
-            <meshBasicMaterial color={ '#6B7280'} envMap={texture} reflectivity={0.9}/>
+            <meshBasicMaterial color={ '#6B7280'} envMap={texture} reflectivity={1}/>
         </mesh>
     )
 }
