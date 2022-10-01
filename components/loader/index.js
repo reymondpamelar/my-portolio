@@ -23,7 +23,7 @@ export default function Loader(){
 
                 </div>
             </div>
-            <h5 className={'absolute text-sm inset-0 flex items-center justify-center animate-loaderInitialAppear'}>
+            <h5 className={'absolute text-sm inset-0 flex items-center justify-center animate-loaderInitialAppear pb-1'}>
                 RP
             </h5>
         </div>

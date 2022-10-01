@@ -8,56 +8,35 @@ import animationData from "/public/circle-data.json";
 import BorderSlideButton from "../../components/general-ui/buttons/border-slide-button";
 import {useRef} from "react";
 import useOnScreen from "../../components/useOnScreen";
+import TextInput from "../../components/general-ui/form/text-input";
+import Cube from "../../components/threeJS/cube";
 
 export default function Contact() {
 
-    useEffect(() => {
-        if(isVisible || isVisible2){
-            setTimeout(()=>{
-                if(document.getElementById('portrait-desktop') != null){
-                    document.getElementById('portrait-desktop').classList.add('opacity-100')
-                    document.getElementById('portrait-desktop').classList.remove('opacity-0')
-                    document.getElementById('portrait-desktop').classList.add('-translate-x-10')
-                    document.getElementById('portrait-desktop').classList.add('-translate-y-10')
-                    document.getElementById('portrait-mobile').classList.add('-translate-x-6')
-                    document.getElementById('portrait-mobile').classList.add('-translate-y-6')
-                }
-            },750)
-        }
-    })
-
-    const ref = useRef()
-    const isVisible = useOnScreen(ref)
-
-    const ref2 = useRef()
-    const isVisible2 = useOnScreen(ref2)
-
     return (
-        <div className={'pt-24 flex justify-center bg-black'}>
+        <div className={'pt-24 flex justify-center text-zinc-600 dark:text-zinc-300 bg-zinc-300 dark:bg-black h-[60rem] relative'}>
             <div className={' mx-10 md:mx-20 w-[80rem]'}>
+                <div className={'absolute inset-0'}>
+                    <Cube/>
+                </div>
                 <FadeSlide delay={100}>
-                    <h1 className={'text-5xl md:text-8xl w-full'}>
+                    <h1 className={'text-5xl md:text-8xl w-full pb-20'}>
                         / Contact
                     </h1>
                 </FadeSlide>
-                <div className={'relative bottom-20'}>
-                    <div className={' md:mt-32 pb-10 grid justify-center'}>
-                        <div key={'quote1'} className={'xl:text-lg grid md:px-10'}>
-                            <div ref={ref} className={'hidden h-full lg:flex justify-end items-end relative'}>
-                                <div className={''}>
-                                    <div className={' rounded-3xl border border-zinc-400 dark:border-zinc-600'}>
-                                        <div id={'portrait-desktop'} className={'group relative shadow-xl rounded-3xl border border-zinc-400 dark:border-zinc-600 relative overflow-hidden bg-white transition ease-in-out duration-500 opacity-0'}>
-                                            <div className={'absolute text-white left-0 z-50 inset-0 flex grid items-center text-4xl font font-asap font-bold w-1/2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-300 p-4'}>
-                                                REYMOND PAMELAR
-                                                <div className={'text-xl'}>
-                                                    SDSU 2021
-                                                </div>
-                                            </div>
-                                            <img src={'portrait.png'} alt={'portrait'} className={'relative z-10 h-[30rem] group-hover:brightness-50 transition ease-in-out duration-700'}/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div className={'grid grid-cols-2'}>
+                    <div className={'mt-20 space-y-4 z-50'}>
+                        <h1 className={'text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>Lets Connect!</h1>
+                        <div className={'space-y-10 pr-20'}>
+                            <TextInput
+                                placeholder={'First name'}
+                            />
+                            <TextInput
+                                placeholder={'Last name'}
+                            />
+                            <TextInput
+                                placeholder={'Email Address'}
+                            />
                         </div>
                     </div>
                 </div>
