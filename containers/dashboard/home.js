@@ -52,7 +52,7 @@ export default function Home(props) {
                                     Front-end Developer
                                 </div>
                             </h1>
-                            <div className={'mt-10 md:text-zinc-300 dark:text-gray-400'}>
+                            <div className={'mt-4 md:text-zinc-300 dark:text-gray-400'}>
                                 <MiddleSlideButton onClick={() => document.getElementById('Projects').scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})}>
                                     VIEW PROJECTS
                                 </MiddleSlideButton>
@@ -62,7 +62,7 @@ export default function Home(props) {
                 </div>
                 <div className={' w-screen h-screen fixed flex justify-center items-end -z-20'}>
                     <div className={' dark:invert w-[80rem]'}>
-                        <div className={'w-[18rem] md:w-[20rem] relative top-12 -left-[7rem] md:-left-[8rem]'}>
+                        <div className={'w-[16rem] md:w-[20rem] relative top-12 -left-[7rem] md:-left-[8rem]'}>
                             <Lottie
                                 options={defaultOptions}
                             />
