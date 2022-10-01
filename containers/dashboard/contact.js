@@ -24,7 +24,7 @@ export default function Contact() {
                         / Contact
                     </h1>
                 </FadeSlide>
-                <div className={'grid grid-cols-2'}>
+                <div className={'grid md:grid-cols-2'}>
                     <div className={'mt-20 space-y-4 z-50'}>
                         <h1 className={'text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>Lets Connect!</h1>
                         <div className={'space-y-10 pr-20'}>
