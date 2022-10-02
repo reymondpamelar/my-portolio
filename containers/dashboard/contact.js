@@ -54,9 +54,6 @@ export default function Contact() {
                                 </MiddleSlideButton>
                             </div>
                         </div>
-                        <h1 className={'text-9xl font-black'}>
-                            RP
-                        </h1>
                     </AccordionVertical>
                 </div>
             </div>
