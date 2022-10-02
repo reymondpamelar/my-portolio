@@ -75,6 +75,12 @@ export default function MobileNavbar(props) {
                                             </h2>
                                             <div className={props.currUnderline !== 'Projects' ? 'translate-x-56 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
                                         </div>
+                                        <div onClick={()=>handleScroll('Contact')} className={' cursor-pointer p-2 overflow-hidden relative'}>
+                                            <h2 className={'flex items-center font-asap tracking-widest'}>
+                                                / CONTACT
+                                            </h2>
+                                            <div className={props.currUnderline !== 'Contact' ? 'translate-x-56 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
+                                        </div>
                                         <div className={''}>
                                             <DarkModeToggle/>
                                         </div>

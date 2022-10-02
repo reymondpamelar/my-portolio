@@ -31,7 +31,8 @@ export default function DesktopNavbar(props) {
             let homePos = document.getElementById('Home').getBoundingClientRect().top;
             let aboutPos = document.getElementById('About').getBoundingClientRect().top;
             let projectsPos = document.getElementById('Projects').getBoundingClientRect().top;
-            let positions = [homePos, aboutPos, projectsPos]
+            let contactPos = document.getElementById('Contact').getBoundingClientRect().top;
+            let positions = [homePos, aboutPos, projectsPos, contactPos]
             let closest = positions.reduce(function(prev, curr) {
                 return (Math.abs(curr - currPos) < Math.abs(prev - currPos) ? curr : prev);
             });
@@ -44,6 +45,9 @@ export default function DesktopNavbar(props) {
                     break;
                 case 2:
                     props.setCurrUnderline('Projects')
+                    break;
+                case 3:
+                    props.setCurrUnderline('Contact')
                     break;
             }
         }
@@ -75,6 +79,12 @@ export default function DesktopNavbar(props) {
                                 / PROJECTS
                             </div>
                             <div className={props.currUnderline !== 'Projects' ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
+                        </div>
+                        <div onClick={()=> scrollTo('Contact')} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
+                            <div>
+                                / CONTACT
+                            </div>
+                            <div className={props.currUnderline !== 'Contact' ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
                         </div>
                     </AccordionVertical>
                 </div>

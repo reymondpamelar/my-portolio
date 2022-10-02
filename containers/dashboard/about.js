@@ -58,7 +58,7 @@ export default function About() {
                         <div>
                             <div key={'quote1'} className={'xl:text-lg grid lg:grid-cols-2 md:px-10'}>
                                 <div className={'w-full'}>
-                                    <FadeSlide className={'space-y-6 md:pr-20 md:text-lg'}>
+                                    <FadeSlide className={'space-y-6 p-2 md:pr-20 md:text-lg'}>
                                         <div>
                                             Nice to meet you! 👋🏽
                                         </div>

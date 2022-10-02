@@ -17,8 +17,8 @@ function Box(props) {
     useFrame(({ mouse }) => {
         const x = mouse.x
         const y = mouse.y
-        ref.current.rotation.y += x / 250;
-        ref.current.rotation.x += y / 250;
+        ref.current.rotation.y += x / 400;
+        ref.current.rotation.x += y / 400;
     })
 
     const texture = useCubeTexture(
