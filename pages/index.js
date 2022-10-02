@@ -5,9 +5,6 @@ import About from "../containers/dashboard/about";
 import Projects from "../containers/dashboard/projects";
 import FadeSlide from "../components/flip-move/fadeSlide";
 import Navbar from "../components/navbar";
-import {motion} from "framer-motion";
-import Particles from "react-tsparticles";
-import {loadTrianglesPreset} from "tsparticles-preset-triangles";
 import Head from "next/head";
 import Loader from "../components/loader";
 import Contact from "../containers/dashboard/contact";
@@ -40,7 +37,6 @@ export default function Start() {
             <Head>
                 <title>Reymond&apos;s Portfolio</title>
                 <meta name="description" content="A brief look at my work :)" />
-                <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <div id={'loader'} className={'transition ease-in-out duration-300 opacity-100 h-screen w-screen flex justify-center items-center bg-mainWhite dark:bg-zinc-800 z-50 fixed '}>
