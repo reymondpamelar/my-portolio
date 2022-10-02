@@ -2,6 +2,8 @@ import { createRoot } from 'react-dom/client'
 import React, { useRef, useEffect, useState } from 'react'
 import {Canvas, useFrame, useThree} from '@react-three/fiber'
 import {useCubeTexture} from '@react-three/drei'
+import MiddleSlideButton from "../general-ui/buttons/middle-slide-button";
+import * as Icon from "react-feather";
 
 function Box(props) {
     const { viewport } = useThree()
@@ -15,8 +17,8 @@ function Box(props) {
     useFrame(({ mouse }) => {
         const x = mouse.x
         const y = mouse.y
-        ref.current.rotation.y += x / 200;
-        ref.current.rotation.x += y / 200;
+        ref.current.rotation.y += x / 250;
+        ref.current.rotation.x += y / 250;
     })
 
     const texture = useCubeTexture(
@@ -25,14 +27,13 @@ function Box(props) {
     )
     return (
         <mesh
-            position={[1.5,0,1.25]}
             {...props}
             ref={ref}
-            scale={window.innerWidth > 640 ? 1.5 : 0.9}
+            scale={window.innerWidth > 640 ? 3 : 2.5}
             onClick={(event) => click(!clicked)}
             onPointerOver={(event) => hover(true)}
             onPointerOut={(event) => hover(false)}>
-            <boxGeometry />
+            <icosahedronGeometry />
             <meshBasicMaterial color={ 'white'} envMap={texture} reflectivity={1}/>
         </mesh>
     )
@@ -41,7 +42,7 @@ function Box(props) {
 export default function Cube(){
     useEffect(() => {
         createRoot(document.getElementById('cube')).render(
-            <Canvas>
+            <Canvas >
                 <ambientLight />
                 <pointLight position={[0, 10, 10]} />
                 <Box />
@@ -50,7 +51,7 @@ export default function Cube(){
     }, []);
 
     return(
-        <div id={'cube'} className={'h-full w-full fixed'}>
+        <div id={'cube'} className={'h-[40rem] w-[40rem]'}>
 
         </div>
     )
