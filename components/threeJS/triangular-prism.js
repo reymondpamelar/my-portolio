@@ -22,6 +22,24 @@ function Box(props) {
         ['px.png', 'nx.png', 'py.png', 'ny.png', 'pz.png', 'nz.png'],
         {path: 'torus/'}
     )
+
+    const root = window.document.documentElement
+    var observer = new MutationObserver(function (event) {
+        if(event[0].target.classList[0] === 'dark'){
+            setDark(true)
+        } else {
+            setDark(false)
+        }
+    })
+
+    observer.observe(root, {
+        attributes: true,
+        attributeFilter: ['class'],
+        childList: false,
+        characterData: false
+    })
+
+    const [dark, setDark] = useState(false)
     return (
         <mesh
             {...props}
@@ -31,7 +49,7 @@ function Box(props) {
             onPointerOver={(event) => hover(true)}
             onPointerOut={(event) => hover(false)}>
             <octahedronGeometry />
-            <meshBasicMaterial color={ '#6B7280'} envMap={texture} reflectivity={1}/>
+            <meshBasicMaterial color={ 'white'} envMap={texture} reflectivity={dark ? 1 : 0.98}/>
         </mesh>
     )
 }
