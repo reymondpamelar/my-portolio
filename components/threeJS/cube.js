@@ -29,7 +29,7 @@ function Box(props) {
         <mesh
             {...props}
             ref={ref}
-            scale={window.innerWidth > 640 ? 3 : 2.5}
+            scale={window.innerWidth > 1024 ? 3 : 2.5}
             onClick={(event) => click(!clicked)}
             onPointerOver={(event) => hover(true)}
             onPointerOut={(event) => hover(false)}>
