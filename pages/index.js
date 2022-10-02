@@ -35,7 +35,7 @@ export default function Start() {
     return (
         <DashboardLayout>
             <Head>
-                <title>Reymond&apos;s Portfolio</title>
+                <title>Reymond Pamelar</title>
                 <meta name="description" content="A brief look at my work :)" />
             </Head>
 
