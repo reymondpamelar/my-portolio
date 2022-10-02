@@ -62,39 +62,39 @@ export default function DesktopNavbar(props) {
                 <h4 className={'p-5 pl-12 col-span-2'}>RP</h4>
                 <div className={'col-span-5'}>
                     <AccordionVertical useOnScreen={false} className={'z-50 flex justify-center items-center gap-12 w-full p-5 px-12 relative'}>
-                        <div onClick={()=> scrollTo('Home')} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
+                        <button onClick={()=> scrollTo('Home')} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
                             <div>
                                 / HOME
                             </div>
                             <div className={props.currUnderline !== 'Home' ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
-                        </div>
-                        <div onClick={()=> scrollTo('About')} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
+                        </button>
+                        <button onClick={()=> scrollTo('About')} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
                             <div>
                                 / ABOUT
                             </div>
                             <div className={props.currUnderline !== 'About' ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
-                        </div>
-                        <div onClick={()=> scrollTo('Projects')} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
+                        </button>
+                        <button onClick={()=> scrollTo('Projects')} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
                             <div>
                                 / PROJECTS
                             </div>
                             <div className={props.currUnderline !== 'Projects' ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
-                        </div>
-                        <div onClick={()=> scrollTo('Contact')} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
+                        </button>
+                        <button onClick={()=> scrollTo('Contact')} className={'cursor-pointer p-2 overflow-hidden relative font-asap tracking-widest'}>
                             <div>
                                 / CONTACT
                             </div>
                             <div className={props.currUnderline !== 'Contact' ? 'translate-x-40 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500' : 'translate-x-0 absolute inset-0 bottom-0 border-b border-zinc-500 dark:border-white transition ease-in-out duration-500'}></div>
-                        </div>
+                        </button>
                     </AccordionVertical>
                 </div>
                 <div className={'flex justify-end items-center p-5 pr-12 gap-8 col-span-2'}>
-                    <div className={'cursor-pointer flex items-center gap-2'}>
+                    <button className={'cursor-pointer flex items-center gap-2'}>
                         <Icon.GitHub onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')} className={'w-5'}/>
-                    </div>
-                    <div className={'cursor-pointer flex items-center gap-2'}>
+                    </button>
+                    <button className={'cursor-pointer flex items-center gap-2'}>
                         <Icon.Linkedin onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')} className={'w-5'}/>
-                    </div>
+                    </button>
                     <div>
                         <DarkModeToggle/>
                     </div>
