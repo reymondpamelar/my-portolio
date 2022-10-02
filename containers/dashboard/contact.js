@@ -27,7 +27,7 @@ export default function Contact() {
                     </h1>
                 </FadeSlide>
                 <div className={'grid md:grid-cols-2'}>
-                    <AccordionVertical className={'pl-10 md:p-12 space-y-10 z-50'}>
+                    <AccordionVertical className={'pl-6 md:p-12 space-y-10 z-50'}>
                         <h2 className={'md:text-6xl text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate '}>Lets Connect!</h2>
                         <h5 className={'text-base md:text-lg'}>
                             I am currently looking for a spot amongst an innovative and creative team!
