@@ -38,15 +38,15 @@ export default function Contact() {
                         <h5 className={'pt-20 text-base md:text-lg'}>
                             reymondpamelar@gmail.com
                         </h5>
-                        <div className={' pb-10 flex'}>
+                        <div className={' pb-10 flex '}>
                             <div className={'flex gap-10 font-asap md:text-zinc-300 dark:text-gray-400'}>
                                 <MiddleSlideButton onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')}>
-                                    <div className={'flex items-center gap-2'}>
+                                    <div className={'flex items-center gap-2 text-zinc-600 dark:text-zinc-300'}>
                                         <Icon.GitHub className={'w-4'}/> GITHUB
                                     </div>
                                 </MiddleSlideButton>
                                 <MiddleSlideButton onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')}>
-                                    <div className={'flex items-center gap-2'}>
+                                    <div className={'flex items-center gap-2 text-zinc-600 dark:text-zinc-300'}>
                                         <Icon.Linkedin className={'w-4'}/> LINKEDIN
                                     </div>
                                 </MiddleSlideButton>
