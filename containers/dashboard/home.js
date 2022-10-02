@@ -52,10 +52,14 @@ export default function Home(props) {
                                     Front-end Developer
                                 </div>
                             </h1>
-                            <div className={'mt-4 md:text-zinc-300 dark:text-gray-400'}>
-                                <MiddleSlideButton onClick={() => document.getElementById('Projects').scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})}>
+                            <div className={'mt-4 md:text-zinc-300 dark:text-gray-400 mix'}>
+                                <button onClick={() => document.getElementById('Projects').scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})} className={'cursor-pointer relative font-asap tracking-widest text-lg group overflow-hidden'}>
                                     VIEW PROJECTS
-                                </MiddleSlideButton>
+                                    <div className={'pt-2'}>
+                                        <span className="absolute -bottom-1 left-1/2 w-3 h-[0.3rem] bg-white group-hover:w-1/2 group-hover:transition-all ease-in-out duration-300"></span>
+                                        <span className="absolute -bottom-1 right-1/2 w-3 h-[0.3rem] bg-white group-hover:w-1/2 group-hover:transition-all ease-in-out duration-300"></span>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                     </AccordionVertical>
