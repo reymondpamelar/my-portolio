@@ -33,7 +33,7 @@ export default function Projects() {
                                 <ProjectTemplate
                                     number={'01'}
                                     title={'Portfolio'}
-                                    techUsed={'Next.js | TailwindCSS'}
+                                    techUsed={'Next.js | TailwindCSS | tsparticles | three.js'}
                                     github={'https://github.com/reymondpamelar/my-portolio'}
                                     link={'https://reymond.dev/'}
                                     imageSrc={'portfolio.png'}

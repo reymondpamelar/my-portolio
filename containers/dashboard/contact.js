@@ -16,7 +16,7 @@ import AccordionVertical from "../../components/flip-move/AccordionVertical";
 export default function Contact() {
 
     return (
-        <div className={'pt-24 flex justify-center text-zinc-600 dark:text-zinc-300 bg-zinc-300 dark:bg-black h-[55rem] md:h-[65rem] relative'}>
+        <div className={'pt-24 flex justify-center text-zinc-600 dark:text-zinc-300 bg-zinc-300 dark:bg-black h-[55rem] md:h-[65rem] relative transition ease-in-out duration-300'}>
             <div className={' mx-10 md:mx-20 w-[80rem] relative'}>
                 <div className={'absolute inset-y-20 -right-[32rem] lg:-right-20'}>
                     <Cube/>
@@ -27,7 +27,7 @@ export default function Contact() {
                     </h1>
                 </FadeSlide>
                 <div className={'grid md:grid-cols-2'}>
-                    <div className={'pl-6 lg:p-12 space-y-10 z-50'}>
+                    <AccordionVertical className={'pl-6 lg:p-12 space-y-10 z-50'}>
                         <div className={'flex'}>
                             <h2 className={'md:text-5xl text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate '}>Lets <span className={'inline-block'}>Connect <span className={'inline-block text-zinc-700'}> 🤝</span></span></h2>
                         </div>
@@ -54,7 +54,7 @@ export default function Contact() {
                                 </MiddleSlideButton>
                             </div>
                         </div>
-                    </div>
+                    </AccordionVertical>
                 </div>
             </div>
 
