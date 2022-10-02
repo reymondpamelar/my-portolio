@@ -66,16 +66,13 @@ export default function About() {
                                             I am <span className={'font-bold'}>Reymond Pamelar</span>
                                         </div>
                                         <div>
-                                            Raised in sunny San Diego, CA, I have always had an interest in computer science. After graduating San Diego State University, I found a great interest in Web Development.
+                                            Raised in San Diego, CA, I have always had an interest in computer science. After graduating San Diego State University, I found my niche in Web Development.
                                         </div>
                                         <div>
                                             Interweaving my creativity with problem solving is what I do best!
                                         </div>
                                         <div>
                                             I love to create <span className={'font-bold'}>fluid</span> and <span className={'font-bold'}>dynamic</span> web applications while keeping <span className={'font-bold'}>responsiveness</span> and <span className={'font-bold'}>accessibility</span> in mind.
-                                        </div>
-                                        <div>
-                                            However, I do like to explore outside the boundaries of a browser.
                                         </div>
                                     </FadeSlide>
                                 </div>

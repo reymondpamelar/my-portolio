@@ -30,7 +30,7 @@ export default function Contact() {
                     <AccordionVertical className={'pl-6 md:p-12 space-y-10 z-50'}>
                         <h2 className={'md:text-6xl text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate '}>Lets Connect!</h2>
                         <h5 className={'text-base md:text-lg'}>
-                            I am currently looking for a spot amongst an innovative and creative team!
+                            I am currently looking for a spot amongst an <span className={'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>innovative</span> and <span className={'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>creative</span> team; especially those working to evolve <span className={'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>Web3</span>!
                         </h5>
                         <h5 className={'text-base md:text-lg'}>
                             Let&apos;s have a conversation on new opportunities for both you and I!
