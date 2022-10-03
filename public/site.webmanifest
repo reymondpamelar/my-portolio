@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Reymond Pamelar",
+    "short_name": "RP",
+    "description": "A brief look at my work :)",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
