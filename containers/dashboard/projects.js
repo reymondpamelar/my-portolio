@@ -19,10 +19,13 @@ export default function Projects() {
     };
 
     return (
-        <div className={'pt-24 pb-24 h-[45rem] md:min-h-[60rem]'}>
+        <div className={'pt-24 pb-24 h-[60rem] md:min-h-[70rem]'}>
             <FadeSlide delay={100} className={'flex justify-center'}>
                 <h1 className={'text-5xl md:text-8xl w-[80rem] mx-10 md:mx-20 pb-10 text-left'}>
                     / Projects
+                    <div className={'flex mt-12 pt-6 pl-6 md:p-12'}>
+                        <h2 className={'text-3xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate '}>Not <span className={'inline-block'}>just ideas...<span className={'inline-block text-zinc-700'}> 👨‍💻</span></span></h2>
+                    </div>
                 </h1>
             </FadeSlide>
             <div className={'relative'}>

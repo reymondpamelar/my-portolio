@@ -27,9 +27,9 @@ export default function Contact() {
                     </h1>
                 </FadeSlide>
                 <div className={'grid md:grid-cols-2'}>
-                    <div className={'pl-6 lg:p-12 space-y-10 z-50'}>
+                    <AccordionVertical className={'pl-6 lg:p-12 space-y-10 z-50'}>
                         <div className={'flex'}>
-                            <h2 className={'md:text-5xl text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate '}>Lets <span className={'inline-block'}>Connect <span className={'inline-block text-zinc-700'}> 🤝</span></span></h2>
+                            <h2 className={'md:text-5xl text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate '}>Lets <span className={'inline-block'}>connect <span className={'inline-block text-zinc-700'}> 🤝</span></span></h2>
                         </div>
                         <h5 className={'text-base md:text-lg'}>
                             I am currently looking for a spot amongst an <span className={'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>innovative</span> and <span className={'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>creative</span> team; especially those working to evolve <span className={'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>Web3</span>.
@@ -37,20 +37,21 @@ export default function Contact() {
                         <h5 className={'text-base md:text-lg'}>
                             Let&apos;s have a conversation on new opportunities for both you and I!
                         </h5>
-                        <h5 className={'pt-20 text-base md:text-lg flex items-center gap-2 font-asap md:text-zinc-300 dark:text-gray-400 uppercase tracking-widest'}>
+                        <h5 className={'pt-20 text-base md:text-lg flex items-center gap-4 font-asap md:text-zinc-600 dark:text-gray-400 uppercase tracking-widest'}>
                             <Icon.Mail className={'w-5'}/>
                             reymondpamelar@gmail.com
                         </h5>
                         <div className={' pb-10 flex '}>
-                            <div className={'flex gap-10 font-asap md:text-zinc-300 dark:text-gray-400'}>
-                                <MiddleSlideButton onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')}>
+                            <div className={'flex items-start gap-4 font-asap md:text-zinc-600 dark:text-gray-400'}>
+                                <Icon.Linkedin className={'w-5'}/>
+                                <BorderSlideButton onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')}>
                                     <div className={'flex items-center gap-2 text-zinc-600 dark:text-zinc-300'}>
-                                        <Icon.Linkedin className={'w-5'}/> LINKEDIN
+                                        LINKEDIN
                                     </div>
-                                </MiddleSlideButton>
+                                </BorderSlideButton>
                             </div>
                         </div>
-                    </div>
+                    </AccordionVertical>
                 </div>
             </div>
 

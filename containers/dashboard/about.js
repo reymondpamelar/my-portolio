@@ -39,10 +39,13 @@ export default function About() {
                     <h1 className={'text-5xl md:text-8xl w-full'}>
                         / About
                     </h1>
+                    <div className={'flex pt-6 pl-6 md:p-12 md:mt-12'}>
+                        <h2 className={'text-3xl md:text-5xl text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>Who <span className={'inline-block'}>am I? <span className={'inline-block text-zinc-700'}> 👨‍💻</span></span></h2>
+                    </div>
                 </FadeSlide>
                 <div className={'relative'}>
-                    <div className={' md:mt-32 grid justify-center'}>
-                        <div ref={ref2} className={'lg:hidden h-full flex justify-center relative p-8 ml-4 pt-24 relative'}>
+                    <div className={' md:mt-10 grid justify-center'}>
+                        <div ref={ref2} className={'lg:hidden h-full flex justify-center relative p-8 ml-4 pt-16 relative'}>
                             <div className={' rounded-3xl border border-zinc-400 dark:border-zinc-600'}>
                                 <div id={'portrait-mobile'} className={'group shadow-2xl rounded-3xl border border-zinc-400 dark:border-zinc-600 relative overflow-hidden bg-white transition ease-in-out duration-500'}>
                                     <div className={'absolute left-0 z-50 inset-0 flex grid items-center text-4xl text-white font-asap font-bold w-1/2 opacity-0 group-hover:opacity-100 transition ease-in-out duration-300 p-4'}>
@@ -56,7 +59,7 @@ export default function About() {
                             </div>
                         </div>
                         <div>
-                            <div key={'quote1'} className={'xl:text-lg grid lg:grid-cols-2 md:px-10'}>
+                            <div key={'quote1'} className={'xl:text-lg grid lg:grid-cols-2 px-2 md:p-10'}>
                                 <div className={'w-full'}>
                                     <FadeSlide className={'space-y-6 p-2 md:pr-20 md:text-lg'}>
                                         <div>
@@ -66,7 +69,7 @@ export default function About() {
                                             I am <span className={'font-bold'}>Reymond Pamelar</span>
                                         </div>
                                         <div>
-                                            Raised in San Diego, CA, I have always had an interest in computer science. After graduating San Diego State University, I found my niche in Web Development.
+                                            Raised in San Diego, CA, I have always had an interest in computer science. After graduating San Diego State University, I found my niche in Web Development and even dipped my toe into Web3 technologies.
                                         </div>
                                         <div>
                                             Interweaving my creativity with problem solving is what I do best!
