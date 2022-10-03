@@ -5,6 +5,8 @@ export default function Document() {
     return (
         <Html>
             <Head>
+                <title>Reymond Pamelar</title>
+                <meta name="description" content="A brief look at my work :)" />
                 <link
                     href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
                     rel="stylesheet"

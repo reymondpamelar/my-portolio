@@ -8,6 +8,7 @@ import Navbar from "../components/navbar";
 import Head from "next/head";
 import Loader from "../components/loader";
 import Contact from "../containers/dashboard/contact";
+import Favicon from "../components/favicon";
 
 export default function Start() {
     useEffect(() => {
@@ -34,10 +35,6 @@ export default function Start() {
     }
     return (
         <DashboardLayout>
-            <Head>
-                <title>Reymond Pamelar</title>
-                <meta name="description" content="A brief look at my work :)" />
-            </Head>
 
             <div id={'loader'} className={'transition ease-in-out duration-300 opacity-100 h-screen w-screen flex justify-center items-center bg-mainWhite dark:bg-zinc-800 z-50 fixed '}>
                 <div className={'relative '}>
