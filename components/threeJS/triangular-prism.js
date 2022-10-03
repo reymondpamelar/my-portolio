@@ -14,8 +14,8 @@ function Box(props) {
     useFrame(({ mouse }) => {
         const x = mouse.x
         const y = mouse.y
-        ref.current.rotation.y += x / 200;
-        ref.current.rotation.x += y / 200;
+        ref.current.rotation.y += x / 300;
+        ref.current.rotation.x += y / 300;
     })
 
     const texture = useCubeTexture(
@@ -49,7 +49,7 @@ function Box(props) {
             onPointerOver={(event) => hover(true)}
             onPointerOut={(event) => hover(false)}>
             <octahedronGeometry />
-            <meshBasicMaterial color={dark ? '#6B7280' : 'white'} envMap={texture} reflectivity={dark ? 1 : 0.95}/>
+            <meshBasicMaterial color={'white'} envMap={texture} reflectivity={dark ? 1 : 0.98}/>
         </mesh>
     )
 }

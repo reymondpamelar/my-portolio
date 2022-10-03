@@ -25,7 +25,7 @@ export default function Home(props) {
 
             <div className={'fixed h-screen w-screen flex justify-center items-center grid z-50'}>
                 <TriangularPrism/>
-                <div className={'relative z-50 px-6 md:px-10 max-w-[80rem]'}>
+                <div className={'relative z-50 px-6 md:px-10 max-w-[80rem] mix-blend-difference'}>
                     <AccordionVertical delay={3000} className={'text-center'} >
                         <div className={'md:hidden pb-10 flex justify-center'}>
                             <div className={'flex gap-10 font-asap md:text-zinc-300 dark:text-gray-400'}>
@@ -47,8 +47,8 @@ export default function Home(props) {
                             </div>
                         </h1>
                         <div className={'relative top-20 md:top-0'}>
-                            <h1 className={'text-2xl md:text-3xl md:text-zinc-300'}>
-                                <div className={' mix-blend-difference'}>
+                            <h1 className={'text-2xl md:text-3xl md:text-zinc-300 '}>
+                                <div className={''}>
                                     Front-end Developer
                                 </div>
                             </h1>
