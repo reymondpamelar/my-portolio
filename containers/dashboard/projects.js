@@ -35,7 +35,6 @@ export default function Projects() {
                                     title={'Portfolio'}
                                     techUsed={'Next.js | TailwindCSS | tsparticles | three.js'}
                                     github={'https://github.com/reymondpamelar/my-portolio'}
-                                    link={'https://reymond.dev/'}
                                     imageSrc={'portfolio.png'}
                                     titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}
                                 />

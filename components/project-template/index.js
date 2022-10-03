@@ -20,7 +20,7 @@ export default function ProjectTemplate(props) {
                         {props.number}
                     </div>
                     <h2 className={props.titleClassName}>{props.title}</h2>
-                    <div className={'text-md'}>
+                    <div className={'text-md '}>
                         {props.techUsed}
                     </div>
                     <div className={'flex gap-6 md:gap-10 absolute right-6 bottom-6 md:right-10 md:bottom-10'}>
@@ -37,7 +37,7 @@ export default function ProjectTemplate(props) {
                     </div>
                 </div>
                 <div className={'opacity-0 group-hover:opacity-50 absolute inset-0 flex transition ease-in-out duration-300'}>
-                    <img src={props.imageSrc} className={'object-cover object-center h-full w-full rounded-3xl relative opacity-50'}/>
+                    <img src={props.imageSrc} className={'grayscale object-cover object-center h-full w-full rounded-3xl relative opacity-50'}/>
                 </div>
             </div>
         </div>

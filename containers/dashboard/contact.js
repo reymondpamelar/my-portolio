@@ -27,7 +27,7 @@ export default function Contact() {
                     </h1>
                 </FadeSlide>
                 <div className={'grid md:grid-cols-2'}>
-                    <AccordionVertical className={'pl-6 lg:p-12 space-y-10 z-50'}>
+                    <div className={'pl-6 lg:p-12 space-y-10 z-50'}>
                         <div className={'flex'}>
                             <h2 className={'md:text-5xl text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate '}>Lets <span className={'inline-block'}>Connect <span className={'inline-block text-zinc-700'}> 🤝</span></span></h2>
                         </div>
@@ -37,24 +37,20 @@ export default function Contact() {
                         <h5 className={'text-base md:text-lg'}>
                             Let&apos;s have a conversation on new opportunities for both you and I!
                         </h5>
-                        <h5 className={'pt-20 text-base md:text-lg'}>
+                        <h5 className={'pt-20 text-base md:text-lg flex items-center gap-2 font-asap md:text-zinc-300 dark:text-gray-400 uppercase tracking-widest'}>
+                            <Icon.Mail className={'w-5'}/>
                             reymondpamelar@gmail.com
                         </h5>
                         <div className={' pb-10 flex '}>
                             <div className={'flex gap-10 font-asap md:text-zinc-300 dark:text-gray-400'}>
-                                <MiddleSlideButton onClick={() => window.open('https://github.com/reymondpamelar', '_blank', 'noopener,noreferrer')}>
-                                    <div className={'flex items-center gap-2 text-zinc-600 dark:text-zinc-300'}>
-                                        <Icon.GitHub className={'w-4'}/> GITHUB
-                                    </div>
-                                </MiddleSlideButton>
                                 <MiddleSlideButton onClick={() => window.open('https://linkedin.com/in/reymondpamelar', '_blank', 'noopener,noreferrer')}>
                                     <div className={'flex items-center gap-2 text-zinc-600 dark:text-zinc-300'}>
-                                        <Icon.Linkedin className={'w-4'}/> LINKEDIN
+                                        <Icon.Linkedin className={'w-5'}/> LINKEDIN
                                     </div>
                                 </MiddleSlideButton>
                             </div>
                         </div>
-                    </AccordionVertical>
+                    </div>
                 </div>
             </div>
 
