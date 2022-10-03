@@ -40,7 +40,7 @@ export default function About() {
                         / About
                     </h1>
                     <div className={'flex pt-6 pl-6 md:p-12 md:mt-12'}>
-                        <h2 className={'text-3xl md:text-5xl text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>Who <span className={'inline-block'}>am I? <span className={'inline-block text-zinc-700'}> 👨‍💻</span></span></h2>
+                        <h2 className={'text-3xl md:text-5xl text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>Who <span className={'inline-block'}>am I? <span className={'inline-block text-zinc-700'}> 🤷</span></span></h2>
                     </div>
                 </FadeSlide>
                 <div className={'relative'}>
