@@ -27,7 +27,7 @@ export default function Contact() {
                     </h1>
                 </FadeSlide>
                 <div className={'grid md:grid-cols-2'}>
-                    <AccordionVertical className={'pl-6 lg:p-12 space-y-10 z-50'}>
+                    <AccordionVertical staggerDelay={100} className={'pl-6 lg:p-12 space-y-10 z-50'}>
                         <div className={'flex'}>
                             <h2 className={'md:text-5xl text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate '}>Lets <span className={'inline-block'}>connect <span className={'inline-block text-zinc-700'}> 🤝</span></span></h2>
                         </div>
