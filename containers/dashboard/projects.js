@@ -57,6 +57,16 @@ export default function Projects() {
                             <div>
                                 <ProjectTemplate
                                     number={'03'}
+                                    title={'DePass'}
+                                    techUsed={'Next.js | TailwindCSS'}
+                                    link={'https://depass.id/'}
+                                    imageSrc={'depass.png'}
+                                    titleClassName={'text-3xl md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#FFB600] to-[#E032E6] background-animate'}
+                                />
+                            </div>
+                            <div>
+                                <ProjectTemplate
+                                    number={'04'}
                                     title={'Privatyze '}
                                     techUsed={'Next.js | Redux | TailwindCSS'}
                                     link={'https://app.privatyze.io/login'}
