@@ -32,7 +32,7 @@ export default function Contact() {
                             <h2 className={'md:text-5xl text-transparent bg-clip-text w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate '}>Lets <span className={'inline-block'}>connect <span className={'inline-block text-zinc-700'}> 🤝</span></span></h2>
                         </div>
                         <h5 className={'text-base md:text-lg'}>
-                            I am currently looking for a spot amongst an <span className={'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>innovative</span> and <span className={'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>creative</span> team; especially those working to evolve <span className={'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>Web3</span>.
+                            I am currently looking for a spot amongst an <span className={'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>innovative</span> and <span className={'text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate'}>creative</span> team.
                         </h5>
                         <h5 className={'text-base md:text-lg'}>
                             Let&apos;s have a conversation on new opportunities for both you and I!
